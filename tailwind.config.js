@@ -54,8 +54,13 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
-        heading: ["var(--font-heading)", ...fontFamily.sans],
+        // sans: ["var(--font-sans)", ...fontFamily.sans],
+        // heading: ["var(--font-heading)", ...fontFamily.sans],
+        sans: ["var(--font-shantell)", ...fontFamily.sans],
+         heading: ["var(--font-shantell)", ...fontFamily.sans],
+        // unkempt: ["var(--font-unkempt)", ...fontFamily.sans],
+        // schoolbell: ["var(--font-schoolbell)", ...fontFamily.sans],
+        // marker: ["var(--font-shantell)", "cursive"],
       },
       borderRadius: {
         lg: "var(--radius)",

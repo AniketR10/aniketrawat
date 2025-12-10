@@ -1,7 +1,7 @@
 import "./globals.css";
 
-import { GoogleAnalytics } from "@next/third-parties/google";
-import { Inter as FontSans } from "next/font/google";
+// import { GoogleAnalytics } from "@next/third-parties/google";
+import { Inter as FontSans, Schoolbell, Shantell_Sans, Unkempt } from "next/font/google";
 import localFont from "next/font/local";
 
 import { Analytics } from "@/components/common/analytics";
@@ -10,11 +10,32 @@ import { Toaster } from "@/components/ui/toaster";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { ModalProvider } from "@/providers/modal-provider";
+import { SiteFooter } from "@/components/common/site-footer";
+import ContactPage from "@/components/common/contact-footer";
 
-const fontSans = FontSans({
+// const fontSans = FontSans({
+//   subsets: ["latin"],
+//   variable: "--font-sans",
+// });
+
+// const unkempt = Unkempt({
+//   subsets: ["latin"],
+//   weight: ["400","700"],
+//   variable: "--font-unkempt",
+// })
+
+// const schoolbell = Schoolbell({
+//   subsets: ["latin"],
+//   weight: "400", // Schoolbell only has a 400 weight
+//   variable: "--font-schoolbell",
+// });
+
+const shantell = Shantell_Sans({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-shantell", // Define the CSS variable
+  display: "swap",
 });
+
 
 // Font files can be colocated inside of `pages`
 const fontHeading = localFont({
@@ -97,9 +118,9 @@ export const metadata = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   const GA_ID = process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID;
-  if (!GA_ID) {
-    throw new Error("Missing Google Analytics ID");
-  }
+  // if (!GA_ID) {
+  //   throw new Error("Missing Google Analytics ID");
+  // }
 
   return (
     <html lang="en" suppressHydrationWarning>
@@ -107,10 +128,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
-          fontHeading.variable
+          fontHeading.variable,
+          shantell.variable
         )}
       >
+        <SiteFooter />
+        
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -131,7 +154,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <ModalProvider />
         </ThemeProvider>
       </body>
-      <GoogleAnalytics gaId={GA_ID} />
+      {/* <GoogleAnalytics gaId={GA_ID} /> */}
     </html>
   );
 }

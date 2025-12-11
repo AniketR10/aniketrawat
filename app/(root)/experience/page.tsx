@@ -8,7 +8,6 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: `${pagesConfig.experience.metadata.title} | Professional Experience Timeline`,
-  description: `${pagesConfig.experience.metadata.description} Explore my professional journey and career milestones in software development.`,
   keywords: [
     "experience timeline",
     "professional experience",
@@ -25,7 +24,6 @@ export default function ExperiencePage() {
   return (
     <PageContainer
       title={pagesConfig.experience.title}
-      description={pagesConfig.experience.description}
     >
       <Timeline experiences={experiences} />
     </PageContainer>

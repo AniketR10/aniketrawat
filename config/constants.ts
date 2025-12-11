@@ -1,5 +1,12 @@
 export type ValidSkills =
   | "Next.js"
+  | "n8n"
+  | "Wordpress API"
+  | "pub/sub API"
+  | "Gmail API"
+  | "Beehiiv API"
+  | "Cloudflare"
+  | "Next.js"
   | "React"
   | "GraphQL"
   | "Nest.js"
@@ -60,6 +67,10 @@ export type ValidSkills =
   | "FastAPI"
   | "SQL"
   | "NoSQL"
+  | "Solidity"
+  | "HTML"
+  | "CSS"
+  | "Metamask"
   | "Framer Motion";
 
 export type ValidCategory =

@@ -7,11 +7,9 @@ import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
 import { Icons } from "@/components/common/icons";
-import ContributionCard from "@/components/contributions/contribution-card";
 import ExperienceCard from "@/components/experience/experience-card";
 import ProjectCard from "@/components/projects/project-card";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { featuredContributions } from "@/config/contributions";
 import { experiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
 import { featuredProjects } from "@/config/projects";
@@ -109,22 +107,6 @@ export default function IndexPage() {
         </p>
       </div>
 
-      <div className="flex flex-col mt-10 items-center md:items-start justify-center sm:flex-row sm:space-x-4 gap-3">
-        <AnimatedText delay={0.8}>
-          <Link
-            href={"/contact"}
-            rel="noreferrer"
-            className={cn(
-              buttonVariants({
-                size: "lg",
-              })
-            )}
-            aria-label="Contact Aniket Rawat"
-          >
-            <Icons.contact className="w-4 h-4 mr-2" /> Contact
-          </Link>
-        </AnimatedText>
-      </div>
     </div>
 
     {/* --- RIGHT SIDE: IMAGE --- */}
@@ -171,7 +153,7 @@ export default function IndexPage() {
         <MovingSkills />
     
 
- {/* 1. Header Section (Unchanged) */}
+{/* 1. Header Section (Unchanged) */}
   <div className="mx-auto mt-16 flex flex-col items-center space-y-4 text-center">
     <AnimatedText
       as="h2"
@@ -181,25 +163,29 @@ export default function IndexPage() {
     </AnimatedText>
   </div>
 
-  {/* 2. Content Container (THE BORDER IS HERE NOW) */}
-  {/* We applied the border, background, and padding to this parent div */}
-  <div className="mx-auto mt-12 flex w-full max-w-6xl flex-col gap-10 rounded-3xl border border-border/120 bg-card/50 p-6 shadow-sm backdrop-blur-sm md:p-12 lg:flex-row">
+  {/* 2. Content Container */}
+  {/* CHANGED: max-w-7xl -> max-w-5xl (Makes the whole section narrower/smaller) */}
+  <div className="mx-auto mt-12 flex w-full max-w-5xl flex-col items-start gap-6 lg:flex-row lg:gap-8">
     
     {/* --- LEFT SIDE: CONTACT FORM --- */}
-    {/* flex-[2] means it takes ~66% width */}
-    <div className="w-full flex-[2]">
+    {/* CHANGED: flex-[2] -> flex-[1.5] (Reduces the form width relative to the github card) */}
+    {/* Reduced padding slightly (md:p-10 -> md:p-8) for a tighter look */}
+    <div className="w-full flex-[1.5] rounded-3xl border border-border/120 bg-card/50 p-6 shadow-sm backdrop-blur-sm md:p-8">
       <ContactForm />
     </div>
 
-    {/* Optional: Vertical Divider for Desktop */}
-    {/* This creates a thin line between the form and the card on large screens */}
-    <div className="hidden w-[1px] bg-border/80 lg:block" />
-
-    {/* --- RIGHT SIDE: GITHUB CARD --- */}
-    {/* flex-1 means it takes ~33% width */}
-    {/* Added 'items-center' to center the card vertically in the available space */}
-    <div className="flex w-full flex-1 flex-col items-center justify-center">
+    {/* --- RIGHT SIDE: GITHUB CARD + TEXT --- */}
+    {/* Added 'gap-4' to separate the card from the text below it */}
+    <div className="flex w-full flex-1 flex-col items-center justify-start gap-4 lg:items-center">
+      
+      {/* The Github Card */}
       <GithubRedirectCard />
+      
+      {/* NEW: Footer Text */}
+      <p className="text-center text-md font-medium text-muted-foreground animate-pulse">
+        Made with <span className="text-red-500">❤️</span> by <span className="text-foreground">Aniket</span>
+      </p>
+
     </div>
     
   </div>

@@ -29,8 +29,17 @@ interface ExperienceCardProps {
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
+
+  const firstPara = experience.description[0] || "";
+  
+  const words = firstPara.split(/\s+/);
+  const isLong = words.length > 25;
+  console.log("no of words are" + words)
+
+  const previewText = isLong ? words.slice(0,25).join(" ") + " ..." : firstPara;
+
   return (
-    <div className="group relative overflow-hidden rounded-lg border bg-background p-4 sm:p-6 transition-all duration-300">
+    <div className=" group relative overflow-hidden rounded-lg border bg-background p-4 sm:p-6 transition-all duration-300">
       <div className="flex items-start gap-3 sm:gap-4">
         {experience.logo && (
           <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg border-2 border-border overflow-hidden bg-white flex-shrink-0">
@@ -72,7 +81,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
             </div>
           </div>
           <p className="mt-2 sm:mt-3 text-sm text-muted-foreground line-clamp-2">
-            {experience.description[0]}
+            {previewText}
           </p>
           <div className="mt-3 sm:mt-4 flex flex-wrap gap-1">
             {experience.skills.slice(0, 2).map((skill, index) => (

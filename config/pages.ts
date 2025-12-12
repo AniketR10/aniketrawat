@@ -3,10 +3,10 @@ import { ValidPages } from "./constants";
 type PagesConfig = {
   [key in ValidPages]: {
     title: string;
-  
+    description?: string
     metadata: {
       title: string;
-      
+      description?: string;
     };
     // featuredDescription: string;
   };
@@ -62,7 +62,6 @@ export const pagesConfig: PagesConfig = {
   },
   experience: {
     title: "Experience",
-   
     metadata: {
       title: "Experience",
      

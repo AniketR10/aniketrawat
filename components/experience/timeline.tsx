@@ -8,6 +8,7 @@ import { AnimatedSection } from "@/components/common/animated-section";
 import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
 import { ExperienceInterface } from "@/config/experience";
+import ExperienceCard from "./experience-card";
 
 // Helper function to extract year from date
 const getYearFromDate = (date: Date): string => {

@@ -93,7 +93,7 @@ export default async function ExperienceDetailPage({
     },
     {
       value: "skills",
-      label: "Skills",
+      label: "Skills Used",
       content: (
         <AnimatedSection delay={0.3}>
           <div>

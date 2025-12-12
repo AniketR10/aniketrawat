@@ -1,6 +1,8 @@
 export type ValidSkills =
   | "Next.js"
   | "n8n"
+  | "Gemini API"
+  | "Discord API"
   | "Wordpress API"
   | "pub/sub API"
   | "Gmail API"

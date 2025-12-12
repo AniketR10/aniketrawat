@@ -13,7 +13,7 @@ export default function PageContainer({
 }: PageContainerProps) {
   return (
     <ClientPageWrapper>
-      <div>
+      <div className="pt-20 sm:pt-24">
         <PageHeader title={title} />
         <div className="mx-6">{children}</div>
       </div>

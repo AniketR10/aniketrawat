@@ -33,13 +33,26 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   const firstPara = experience.description[0] || "";
   
   const words = firstPara.split(/\s+/);
-  const isLong = words.length > 25;
+  const isLong = words.length > 20;
   console.log("no of words are" + words)
 
-  const previewText = isLong ? words.slice(0,25).join(" ") + " ..." : firstPara;
+  const previewText = isLong ? words.slice(0,20).join(" ") + " ..." : firstPara;
 
   return (
-    <div className=" group relative overflow-hidden rounded-lg border bg-background p-4 sm:p-6 transition-all duration-300">
+    <div className=" group relative overflow-hidden rounded-lg border bg-background p-3 sm:p-4 max-w-6xl mx-auto transition-all duration-300 ">
+      <div className="absolute top-4 right-4 z-10 hidden sm:block">
+        <Button
+          variant="outline"
+          size="sm"
+          className="h-8 text-xs rounded-lg"
+          asChild
+        >
+          <Link href={`/experience/${experience.id}`}>
+            View Details
+            <Icons.chevronRight className="ml-2 h-4 w-4" />
+          </Link>
+        </Button>
+      </div>
       <div className="flex items-start gap-3 sm:gap-4">
         {experience.logo && (
           <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg border-2 border-border overflow-hidden bg-white flex-shrink-0">
@@ -100,19 +113,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
           </div>
         </div>
       </div>
-      <div className="mt-3 sm:mt-4 flex justify-end">
-        <Button
-          variant="outline"
-          size="sm"
-          className="rounded-lg w-full sm:w-auto"
-          asChild
-        >
-          <Link href={`/experience/${experience.id}`}>
-            View Details
-            <Icons.chevronRight className="ml-2 h-4 w-4" />
-          </Link>
-        </Button>
-      </div>
+      
     </div>
   );
 };

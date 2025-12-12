@@ -42,7 +42,7 @@ export const experiences: ExperienceInterface[] = [
     startDate: new Date("2024-10-01"),
     endDate: new Date("2025-04-01"),
     description: [
-      "Co-authored and published a research paper in IEEE Xplore, focusing on the integration of blockchain for real-time tracking and reduction of carbon footprints...",
+      "Co-authored and published a research paper in IEEE Xplore, focusing on the integration of blockchain for real-time tracking and reduction of carbon footprints.",
       "Published a Patent on BLOCKCHAIN-BASED CARBON FOOTPRINT MANAGEMENT SYSTEM WITH EDGE COMPUTING",
       "Developed a Prototype that measures Carbon Footprints of vehicles based on their type and Mode of Transport",
     ],

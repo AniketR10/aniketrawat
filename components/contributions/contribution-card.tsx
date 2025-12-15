@@ -1,45 +1,58 @@
+import Image from "next/image";
 import Link from "next/link";
+import { Icons } from "@/components/common/icons"; 
+import { ScrapedData } from "@/lib/scrape-meta";
 
-import { Icons } from "@/components/common/icons";
-import { contributionsInterface } from "@/config/contributions";
-
-interface ContributionCardProps {
-  contributions: contributionsInterface[];
+interface BlogCardProps {
+  data: ScrapedData;
 }
 
-export default function ContributionCard({
-  contributions,
-}: ContributionCardProps) {
+export default function BlogCard({ data }: BlogCardProps) {
   return (
-    <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3 static">
-      {contributions.map((contribution, id) => (
-        <Link href={contribution.link} target="_blank" key={id}>
-          <div className="relative rounded-lg border bg-background p-2 hover:bg-accent hover:text-accent-foreground">
-            <Icons.externalLink
-              size={35}
-              className="absolute bottom-3 right-3 border bg-background rounded-full p-2 cursor-pointer text-muted-foreground "
+    <Link href={data.url} target="_blank" className="group block h-full">
+      <div className="flex h-full flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all hover:shadow-md">
+        
+        <div className="relative h-48 w-full overflow-hidden border-b border-border bg-muted">
+          {data.image && (
+            <Image
+              src={data.image}
+              alt={data.title}
+              fill
+              unoptimized={true}
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
             />
-            <div className="flex h-[170px] flex-col justify-between rounded-md p-6 sm:h-[170px]">
-              <div className="flex flex-row justify-between">
-                <h3 className="font-bold flex space-x-2 items-center">
-                  <Icons.gitRepoIcon size={20} />
-                  <span>{contribution.repo}</span>
-                </h3>
-                <Icons.gitBranch size={20} />
-              </div>
-              <div className="space-y-4">
-                <p className="text-sm text-muted-foreground">
-                  {contribution.contibutionDescription}
-                </p>
-                <p className="text-sm text-muted-foreground flex space-x-2 items-center">
-                  <Icons.gitOrgBuilding size={15} />
-                  <span>{contribution.repoOwner}</span>
-                </p>
-              </div>
-            </div>
+          )}
+        </div>
+
+        <div className="flex flex-1 flex-col p-5">
+          
+          <div className="mb-3 flex items-center justify-between text-xs text-muted-foreground">
+            <time className="font-medium">{data.date}</time>
           </div>
-        </Link>
-      ))}
-    </div>
+
+          <h3 className="mb-2 text-lg font-bold leading-tight tracking-tight text-foreground group-hover:text-primary group-hover:underline decoration-2 underline-offset-4 transition-colors line-clamp-2">
+            {data.title}
+          </h3>
+
+          <p className="mb-4 flex-1 text-sm text-muted-foreground line-clamp-3">
+            {data.description}
+          </p>
+          <div className="mt-auto flex items-center gap-2 pt-4 border-t border-border/50">
+            <div className="relative h-6 w-6 overflow-hidden rounded-full border border-border">
+              <Image 
+                src="/image.png" 
+                alt="Author" 
+                fill 
+                unoptimized={true}
+                className="object-cover" 
+              />
+            </div>
+            <span className="text-sm font-semibold text-primary">
+              Aniket Rawat
+            </span>
+          </div>
+        </div>
+      </div>
+    </Link>
   );
 }

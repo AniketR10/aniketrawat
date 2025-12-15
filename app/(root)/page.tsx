@@ -109,28 +109,20 @@ export default function IndexPage() {
 
     </div>
 
-    {/* --- RIGHT SIDE: IMAGE --- */}
+
     <div className="flex-1 flex justify-center md:justify-end">
-      {/* 1. The Container: Needs specific size to hold the stack */}
+  
       <div className="relative h-[350px] w-[300px] sm:h-[450px] sm:w-[400px]">
         
-        {/* 2. Background Card (The Cyan Color) */}
-        {/* absolute inset-0: Fills the container
-            rotate-6: Tilts it to the right
-            bg-cyan-500: The color from your image example (change to bg-primary if you prefer)
-            rounded-3xl: Matches the card curve */}
+       
         <div className="absolute inset-0 rotate-6 rounded-3xl bg-yellow-500 shadow-lg transition-transform duration-300 hover:rotate-12"></div>
         
-        {/* 3. Foreground Card (The Image) */}
-        {/* relative: Sits on top
-            -rotate-6: Tilts to the left (opposite of background)
-            border-8 border-white: Creates the white frame like a photo
-            overflow-hidden: Clips the image to the rounded corners */}
+      
         <div className="relative h-full w-full -rotate-6 overflow-hidden rounded-3xl border-8 border-cyan-500 bg-white shadow-2xl transition-transform duration-300 hover:-rotate-3">
           <Image
-            src={profileImg}
-            fill // Uses "fill" to adapt to the parent container size
-            className="object-cover" // Ensures image covers the area without stretching
+            src="/image.png"
+            fill 
+            className="object-cover" 
             alt="Aniket Rawat - Full Stack Developer Portfolio"
             priority
           />
@@ -139,10 +131,7 @@ export default function IndexPage() {
       </div>
     </div>
   </div>
-  {/* The chevron can stay outside the flex container or move inside depending on preference */}
-  {/* <AnimatedText delay={1.2} className="absolute bottom-10 left-1/2 -translate-x-1/2">
-    <Icons.chevronDown className="h-6 w-6" />
-  </AnimatedText> */}
+ 
 </section>
     
         <div className="mx-auto flex max-w-[58rem]  flex-col items-center space-y-4 text-center ">
@@ -153,7 +142,6 @@ export default function IndexPage() {
         <MovingSkills />
     
 
-{/* 1. Header Section (Unchanged) */}
   <div className="mx-auto mt-16 flex flex-col items-center space-y-4 text-center">
     <AnimatedText
       as="h2"
@@ -163,25 +151,16 @@ export default function IndexPage() {
     </AnimatedText>
   </div>
 
-  {/* 2. Content Container */}
-  {/* CHANGED: max-w-7xl -> max-w-5xl (Makes the whole section narrower/smaller) */}
   <div className="mx-auto mt-12 flex w-full max-w-5xl flex-col items-start gap-6 lg:flex-row lg:gap-8">
     
-    {/* --- LEFT SIDE: CONTACT FORM --- */}
-    {/* CHANGED: flex-[2] -> flex-[1.5] (Reduces the form width relative to the github card) */}
-    {/* Reduced padding slightly (md:p-10 -> md:p-8) for a tighter look */}
     <div className="w-full flex-[1.5] rounded-3xl border border-border/120 bg-card/50 p-6 shadow-sm backdrop-blur-sm md:p-8">
       <ContactForm />
     </div>
 
-    {/* --- RIGHT SIDE: GITHUB CARD + TEXT --- */}
-    {/* Added 'gap-4' to separate the card from the text below it */}
     <div className="flex w-full flex-1 flex-col items-center justify-start gap-4 lg:items-center">
       
-      {/* The Github Card */}
       <GithubRedirectCard />
       
-      {/* NEW: Footer Text */}
       <p className="text-center text-md font-medium text-muted-foreground animate-pulse">
         Made with <span className="text-red-500">❤️</span> by <span className="text-foreground">Aniket</span>
       </p>

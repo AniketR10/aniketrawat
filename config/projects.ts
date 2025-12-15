@@ -29,25 +29,24 @@ export interface ProjectInterface {
 
 export const Projects: ProjectInterface[] = [
   {
-    id: "built-design",
-    companyName: "Builtdesign",
+    id: "hw-dsa",
+    companyName: "Hello, World! DSA",
     type: "Professional",
     category: ["Web Dev", "Full Stack", "UI/UX"],
     shortDescription:
-      "Developed and optimized a high-performing website catering to over 4000 users, emphasizing efficiency and maintainability.",
-    websiteLink: "https://builtdesign.in",
+      "Built a complete DSA section by scraping 3,100+ LeetCode problems using Selenium, fetching related video explanations using YouTube Data API, and integrating company-specific insights and logos using Logo API. Optimized content delivery and storage using Cloudflare.",
+    websiteLink: "https://hw.glich.co/resources/dsa",
     techStack: [
+      "Typescript",
       "Next.js",
       "React",
-      "Node.js",
-      "MongoDB",
-      "GraphQL",
-      "Nest.js",
-      "Typescript",
+      "PostgreSQL",
+      "Selenium",
+      "Youtube API",
     ],
     startDate: new Date("2021-07-01"),
     endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/builtdesign/logo.png",
+    companyLogoImg: "/projects/builtdesign/hw-dsa-1.png",
     pagesInfoArr: [
       {
         title: "Landing Page",
@@ -101,18 +100,18 @@ export const Projects: ProjectInterface[] = [
     },
   },
   {
-    id: "the-super-quotes",
-    companyName: "The Super Quotes",
+    id: "what-cms",
+    companyName: "WhatCMS",
     type: "Professional",
     category: ["Mobile Dev", "Full Stack", "UI/UX"],
     shortDescription:
-      "Elevated The Super Quotes app with JavaScript, React Native, APIs, Redux magic, and Google Play Store debut.",
+      "Built WhatCMS (a CMS Scanner) that identifies a website’s CMS (WordPress, Joomla, Drupal, etc.) from just a URL, using the WhatWeb open-source tool for accurate & fast detection.",
     websiteLink:
-      "https://play.google.com/store/apps/details?id=com.thesuperlife",
-    techStack: ["React Native", "Node.js", "MongoDB", "Javascript"],
+      "https://www.contenttoolkit.co/what-cms",
+    techStack: ["Typescript", "Next.js", "Whatweb tool"],
     startDate: new Date("2021-07-01"),
     endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/superquotes/logo.png",
+    companyLogoImg: "/projects/superquotes/whatweb-cms.png",
     pagesInfoArr: [
       {
         title: "Quotes View Page",
@@ -167,17 +166,18 @@ export const Projects: ProjectInterface[] = [
     },
   },
   {
-    id: "apex-shopping",
-    companyName: "Apex Shopping App",
+    id: "job-portal",
+    companyName: "JobOrbit",
     type: "Personal",
     category: ["Mobile Dev", "Full Stack", "UI/UX"],
     shortDescription:
-      "Developed a feature-rich mobile shopping application with admin panel, user authentication, and seamless product management using React Native and Firebase.",
-    githubLink: "https://github.com/namanbarkiya/apex-shopping-app",
-    techStack: ["React Native", "Javascript", "Redux", "Node.js", "express.js"],
+      "A full-stack application connecting employers and candidates with role-based access(RBAC). Core features include JWT authentication, on-click resume uploads/downloads, job search with filters, application tracking and automated email notifications.",
+    githubLink: "https://github.com/AniketR10/JobPortal",
+    techStack: ["React", "Next.js", "Node.js", "express.js", "Tailwind CSS", "Typescript", "MongoDB", "jwt", "REST", "Cloudinary", "Shadcn", "Vercel", "Render"],
+    websiteLink: "https://job-portal-frontend-ten-ashen.vercel.app/",
     startDate: new Date("2021-07-14"),
     endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/apex/logo.png",
+    companyLogoImg: "/projects/apex/joborbit-ss.png",
     pagesInfoArr: [
       {
         title: "Splash Screen",
@@ -231,17 +231,17 @@ export const Projects: ProjectInterface[] = [
     },
   },
   {
-    id: "builtdesign-blogs",
-    companyName: "Builtdesign Blogs",
+    id: "theme-detect",
+    companyName: "Wordpress ThemeDetect",
     type: "Professional",
     category: ["Web Dev", "Full Stack", "UI/UX"],
     shortDescription:
-      "Crafted Builtdesign's vibrant Blogs Website using Netlify CMS and React for engaging content experiences.",
-    websiteLink: "https://blog.builtdesign.in",
-    techStack: ["Next.js", "React", "Node.js", "MongoDB", "Typescript"],
+      "Built Wordpress ThemeDetect (a WordPress Theme & Plugin Detector) that uses the WordPress API and source-code crawling to extract theme metadata (name, version, author) and detect active plugins from a single URL.",
+    websiteLink: "https://www.contenttoolkit.co/wordpress-theme-detector",
+    techStack: ["Typescript", "Next.js", "Wordpress API"],
     startDate: new Date("2022-03-01"),
     endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/builtdesign-blogs/logo.png",
+    companyLogoImg: "/projects/builtdesign-blogs/theme-detect.png",
     pagesInfoArr: [
       {
         title: "Blog Landing Page",
@@ -289,18 +289,18 @@ export const Projects: ProjectInterface[] = [
     },
   },
   {
-    id: "portfolio-card",
-    companyName: "Portfolio Card",
+    id: "pick-ui",
+    companyName: "pickUI",
     type: "Personal",
     category: ["Web Dev", "Frontend", "3D Modeling"],
     shortDescription:
-      "Forged an immersive 3D Portfolio Card utilizing the prowess of Three.js and Blender, where art and technology converge in an interactive masterpiece.",
-    websiteLink: "https://card.namanbarkiya.xyz/",
-    githubLink: "https://github.com/namanbarkiya/3d-portfolio-card",
-    techStack: ["React", "Javascript", "HTML 5", "CSS 3"],
+      "pickUI is a Chrome extension that lets users capture UI components from any website in a single click and copy them as clean, reusable HTML with inline styles.",
+    websiteLink: "https://chromewebstore.google.com/detail/gnjjfieodpccfhhijmpgooppefenpohk?utm_source=item-share-cb",
+    githubLink: "https://github.com/AniketR10/pickUI",
+    techStack: ["Typescript", "React", "Tailwind CSS", "Chrome Manifest V3"],
     startDate: new Date("2022-03-01"),
     endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/card/logo.png",
+    companyLogoImg: "/projects/card/lc-pickui.png",
     pagesInfoArr: [
       {
         title: "Card Views",
@@ -340,17 +340,18 @@ export const Projects: ProjectInterface[] = [
     },
   },
   {
-    id: "cirql-dashboard",
-    companyName: "Cirql Dashboard",
+    id: "lc-customizer",
+    companyName: "Leetcode Customizer",
     type: "Personal",
     category: ["Web Dev", "Frontend", "UI/UX"],
     shortDescription:
-      "Created a dashboard project using React and Tailwind CSS, focusing on UI design and routing implementation.",
-    websiteLink: "https://cirql-ui.namanbarkiya.xyz/",
-    techStack: ["React", "Tailwind CSS", "Google Auth"],
+      "This Chrome Extension allows users to customize the appearance of LeetCode by allowing users to change fonts, code editor themes, UI font sizes, and editor background colors.",
+    githubLink: "https://github.com/AniketR10/Leetcode-Customizer",
+    websiteLink: "https://chromewebstore.google.com/detail/nljdhlnaeechhagalijfhllebbjmjjka?utm_source=item-share-cb",
+    techStack: ["HTML", "CSS", "Javascript", "Google Fonts API", "Chrome Storage API", "Chrome Manifest V3"],
     startDate: new Date("2023-01-01"),
     endDate: new Date("2023-02-15"),
-    companyLogoImg: "/projects/cirql/logo.png",
+    companyLogoImg: "/projects/cirql/lc-logo.png",
     pagesInfoArr: [
       {
         title: "Dashboard Home",
@@ -383,18 +384,116 @@ export const Projects: ProjectInterface[] = [
     },
   },
   {
-    id: "inscript-hindi-typing",
-    companyName: "Inscript Hindi Typing",
+    id: "text-editor",
+    companyName: "Terminal Based Text Editor",
     type: "Personal",
     category: ["Web Dev", "UI/UX"],
     shortDescription:
-      "Developed a user-friendly website for Inscript Hindi typing, addressing the need for a simple tool for Hindi writers to convey data digitally.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
-    techStack: ["HTML 5", "CSS 3", "Javascript"],
+      "A lightweight, dependency-free text editor built from scratch in C, utilizing raw terminal mode and VT100 escape sequences. It features custom syntax highlighting for C/C++, incremental search, and a responsive TUI.",
+   // websiteLink: "https://hindityping.namanbarkiya.xyz",
+    githubLink: "https://github.com/AniketR10/Text-Editor-in-C",
+    techStack: ["C", "System API", "make"],
     startDate: new Date("2022-05-01"),
     endDate: new Date("2022-06-15"),
-    companyLogoImg: "/projects/hindi-keyboard/logo.png",
+    companyLogoImg: "/projects/hindi-keyboard/text-image.png",
+    pagesInfoArr: [
+      {
+        title: "Typing Interface",
+        description: "Minimal and user-friendly Inscript Hindi typing area",
+        imgArr: ["/projects/hindi-keyboard/web_1.png"],
+      },
+      {
+        title: "Copy and Download the file",
+        description:
+          "Export functionality allowing users to copy text or download as a document file",
+        imgArr: [
+          "/projects/hindi-keyboard/web_2.png",
+          "/projects/hindi-keyboard/web_3.png",
+        ],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "The 'Inscript Hindi Typing Website' project emerged from the need to provide a simple and accessible tool for Hindi writers, especially those in digital news and media, who wished to convey data in Hindi.",
+        "Recognizing the challenges posed by complex software in the market, I set out to create a minimalistic typing area that catered to the needs of a vast community of Hindi typists in India.",
+        "The project was designed to address the specific requirements of users familiar with the Inscript keyboard layout, mapping English and Hindi alphabets for seamless typing. The intuitive interface allowed users to effortlessly switch between languages, streamlining the process of content creation.",
+        "Leveraging HTML and CSS, I crafted the website's UI to ensure a user-friendly experience. Additionally, Local Storage was utilized to enable users to save and retrieve their work, enhancing convenience and productivity.",
+        "The website's focus on user experience and simplicity proved to be a key factor in its popularity among Hindi writers. By offering a tool that reduced the barriers to entry, I contributed to the digital empowerment of Hindi typists who previously faced challenges in conveying their message effectively.",
+        "This project marked one of my initial forays into web development and highlighted the transformative potential of technology in addressing real-world challenges.",
+      ],
+      bullets: [
+        "Developed a user-friendly website for Inscript Hindi typing.",
+        "Catered to the needs of Hindi writers in digital news and media.",
+        "Created a minimalistic and intuitive typing interface for the Inscript keyboard layout.",
+        "Mapped English and Hindi alphabets to provide a seamless typing experience.",
+        "Utilized HTML and CSS to design a user-friendly UI.",
+        "Implemented Local Storage to enable users to save and retrieve their work.",
+        "Contributed to the digital empowerment of Hindi typists by offering a simple tool.",
+        "Marked one of my first web development projects, showcasing technology's potential for addressing real-world needs.",
+      ],
+    },
+  },
+  {
+    id: "stackout-tool",
+    companyName: "Stackout",
+    type: "Professional",
+    category: ["Web Dev", "UI/UX"],
+    shortDescription:
+     "Built an end-to-end backend automation system that parses incoming Substack subscriber emails via Gmail API, triggers workflows through Google Pub/Sub, and auto-creates subscribers in Beehiiv using its API.",
+    websiteLink: "https://stackout.co/",
+    techStack: ["Typescript", "Next.js", "pub/sub API", "Gmail API", "Beehiiv API"],
+    startDate: new Date("2022-05-01"),
+    endDate: new Date("2022-06-15"),
+    companyLogoImg: "/projects/stackout/stack-logo.png",
+    pagesInfoArr: [
+      {
+        title: "Typing Interface",
+        description: "Minimal and user-friendly Inscript Hindi typing area",
+        imgArr: ["/projects/hindi-keyboard/web_1.png"],
+      },
+      {
+        title: "Copy and Download the file",
+        description:
+          "Export functionality allowing users to copy text or download as a document file",
+        imgArr: [
+          "/projects/hindi-keyboard/web_2.png",
+          "/projects/hindi-keyboard/web_3.png",
+        ],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "The 'Inscript Hindi Typing Website' project emerged from the need to provide a simple and accessible tool for Hindi writers, especially those in digital news and media, who wished to convey data in Hindi.",
+        "Recognizing the challenges posed by complex software in the market, I set out to create a minimalistic typing area that catered to the needs of a vast community of Hindi typists in India.",
+        "The project was designed to address the specific requirements of users familiar with the Inscript keyboard layout, mapping English and Hindi alphabets for seamless typing. The intuitive interface allowed users to effortlessly switch between languages, streamlining the process of content creation.",
+        "Leveraging HTML and CSS, I crafted the website's UI to ensure a user-friendly experience. Additionally, Local Storage was utilized to enable users to save and retrieve their work, enhancing convenience and productivity.",
+        "The website's focus on user experience and simplicity proved to be a key factor in its popularity among Hindi writers. By offering a tool that reduced the barriers to entry, I contributed to the digital empowerment of Hindi typists who previously faced challenges in conveying their message effectively.",
+        "This project marked one of my initial forays into web development and highlighted the transformative potential of technology in addressing real-world challenges.",
+      ],
+      bullets: [
+        "Developed a user-friendly website for Inscript Hindi typing.",
+        "Catered to the needs of Hindi writers in digital news and media.",
+        "Created a minimalistic and intuitive typing interface for the Inscript keyboard layout.",
+        "Mapped English and Hindi alphabets to provide a seamless typing experience.",
+        "Utilized HTML and CSS to design a user-friendly UI.",
+        "Implemented Local Storage to enable users to save and retrieve their work.",
+        "Contributed to the digital empowerment of Hindi typists by offering a simple tool.",
+        "Marked one of my first web development projects, showcasing technology's potential for addressing real-world needs.",
+      ],
+    },
+  },
+  {
+    id: "content-toolkit",
+    companyName: "ContentToolkit",
+    type: "Professional",
+    category: ["Web Dev", "UI/UX"],
+    shortDescription:
+    "Developed a backoffice system to manage and upload new CMS information, with automated content generation by the Gemini API, built a dedicated background-task API alongside the main Next.js API to offload heavy operations like AI content generation (Gemini API), R2 image uploads, and GitHub stats fetching, preventing timeouts and significantly improving site performance.",
+    websiteLink: "https://www.contenttoolkit.co/",
+    techStack: ["Typescript", "Next.js", "Gemini API", "Github API", "Cloudflare"],
+    startDate: new Date("2022-05-01"),
+    endDate: new Date("2022-06-15"),
+    companyLogoImg: "/projects/contenttoolkit/toolkit.png",
     pagesInfoArr: [
       {
         title: "Typing Interface",

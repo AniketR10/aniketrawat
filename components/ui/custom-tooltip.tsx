@@ -21,7 +21,7 @@ export default function CustomTooltip({
 }: CustomTooltipProps) {
   const IconComponent = icon ? icon : Icons.infoMark;
   return (
-    <TooltipProvider>
+    <TooltipProvider delayDuration={0}>
       <Tooltip>
         <TooltipTrigger asChild>{children}</TooltipTrigger>
         <TooltipContent className="flex text-muted-foreground items-center">

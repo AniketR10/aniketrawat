@@ -127,6 +127,7 @@ export const Icons = {
   n8n: () => <Icon icon="devicon:n8n-wordmark" width={20} height={20} />,
   solidity: () => <Icon icon="skill-icons:solidity" width={20} height={20} />,
   vercel: () => <Icon icon="skill-icons:vercel-dark" width={20} height={20} />,
+  docker: () => <Icon icon="skill-icons:docker" width={20} height={20} />,
   render: SiRender,
   gmail: SiGmail,
   twitter: SiX,

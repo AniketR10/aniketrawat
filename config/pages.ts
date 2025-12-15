@@ -30,10 +30,10 @@ export const pagesConfig: PagesConfig = {
   },
   projects: {
     title: "Projects",
-   
+   description: "Projects I have worked across...",
     metadata: {
       title: "Projects",
-     
+     description: "Projects I have worked across",
     },
   },
   contact: {
@@ -45,11 +45,11 @@ export const pagesConfig: PagesConfig = {
     },
   },
   contributions: {
-    title: "Contributions",
-  
+    title: "Blogs",
+    description: "My blogs contains latest happenings in Tech, cool tools to use for developers and memes!",
     metadata: {
-      title: "Contributions",
-     
+      title: "Blogs",
+      description: "My blogs contains latest happenings in Tech, cool tools to use for developers and memes!",
     },
   },
   resume: {

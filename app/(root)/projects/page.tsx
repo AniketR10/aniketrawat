@@ -45,6 +45,7 @@ export default function ProjectsPage() {
   return (
     <PageContainer
       title={pagesConfig.projects.title}
+      description={pagesConfig.projects.description}
     >
       <ResponsiveTabs items={tabItems} defaultValue="personal" />
     </PageContainer>

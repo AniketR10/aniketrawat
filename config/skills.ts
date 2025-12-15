@@ -118,5 +118,10 @@ export const skillsUnsorted: skillsInterface[] = [
     
     icon: Icons.netlify,
   },
+  {
+    name: "Docker",
+    
+    icon: Icons.docker,
+  },
 ];
 

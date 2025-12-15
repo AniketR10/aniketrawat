@@ -1,13 +1,13 @@
 export const siteConfig = {
   name: "Aniket Rawat | Developer Portfolio",
   authorName: "Aniket Rawat ",
-  username: "namanbarkiya",
+  username: "AniketRawat",
   description:
     "Aniket Rawat 's portfolio - A modern, responsive Next.js portfolio for developers. This open-source template can be customized to showcase your own skills, projects, and professional experience.",
   url: "https://nbarkiya.xyz",
   links: {
-    twitter: "https://x.com/namanbarkiya",
-    github: "https://github.com/namanbarkiya",
+    twitter: "https://x.com/aniketrawat00",
+    github: "https://github.com/AniketR10",
   },
   ogImage: "https://nbarkiya.xyz/profile-img.jpeg",
   iconIco:

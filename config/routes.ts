@@ -9,7 +9,7 @@ export const routesConfig: any = {
       href: "/experience",
     },
     {
-      title: "Blog",
+      title: "Blogs",
       href: "/contributions",
     },
   ],

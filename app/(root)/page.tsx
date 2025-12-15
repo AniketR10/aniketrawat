@@ -120,7 +120,7 @@ export default function IndexPage() {
       
         <div className="relative h-full w-full -rotate-6 overflow-hidden rounded-3xl border-8 border-cyan-500 bg-white shadow-2xl transition-transform duration-300 hover:-rotate-3">
           <Image
-            src="/image.png"
+            src="/my-logo-1.png"
             fill 
             className="object-cover" 
             alt="Aniket Rawat - Full Stack Developer Portfolio"

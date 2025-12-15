@@ -390,7 +390,6 @@ export const Projects: ProjectInterface[] = [
     category: ["Web Dev", "UI/UX"],
     shortDescription:
       "A lightweight, dependency-free text editor built from scratch in C, utilizing raw terminal mode and VT100 escape sequences. It features custom syntax highlighting for C/C++, incremental search, and a responsive TUI.",
-   // websiteLink: "https://hindityping.namanbarkiya.xyz",
     githubLink: "https://github.com/AniketR10/Text-Editor-in-C",
     techStack: ["C", "System API", "make"],
     startDate: new Date("2022-05-01"),

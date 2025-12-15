@@ -37,7 +37,7 @@ const BLOG_URLS = [
   "https://hw.glich.co/p/cloudflare-containers-nvidia-reaching-4-trillion-just-another-productive-week-in-tech",
   "https://hw.glich.co/p/icloud-down-css-got-smart-what-s-going-on-in-tech-town",
   "https://hw.glich.co/p/outages-password-leaks-what-else-happened-this-week",
-  
+
 ];
 
 export default async function BlogPage() {
@@ -47,7 +47,8 @@ export default async function BlogPage() {
 
   return (
     <PageContainer
-      title="Blog"
+      title={pagesConfig.contributions.title}
+      description={pagesConfig.contributions.description}
     >
       <div className="mx-auto grid justify-center gap-6 sm:grid-cols-2 lg:grid-cols-3 w-full mt-8">
         {blogs.map((blog, index) => (

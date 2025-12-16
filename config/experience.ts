@@ -46,7 +46,7 @@ export const experiences: ExperienceInterface[] = [
       "Published a Patent on BLOCKCHAIN-BASED CARBON FOOTPRINT MANAGEMENT SYSTEM WITH EDGE COMPUTING",
       "Developed a Prototype that measures Carbon Footprints of vehicles based on their type and Mode of Transport",
     ],
-    skills: ["HTML", "CSS", "Solidity", "Metamask"],
+    skills: ["Solidity", "Metamask", "HTML", "CSS"],
     companyUrl: "https://agentprod.com",
     logo: "/experience/kiit.png",
   },

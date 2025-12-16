@@ -11,7 +11,6 @@ import {
   FormControl,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -20,19 +19,17 @@ import { useModalStore } from "@/hooks/use-modal-store";
 
 const formSchema = z.object({
   name: z.string().min(3, {
-    message: "Name must contain at least 3 characters.",
+    message: "Name must be at least 3 chars.",
   }),
-  email: z.string().email("Please enter a valid email."),
+  email: z.string().email("Invalid email."),
   message: z.string().min(10, {
-    message: "Please write something more descriptive.",
+    message: "Message is too short.",
   }),
   social: z.string().url().optional().or(z.literal("")),
 });
 
 export function ContactForm() {
   const storeModal = useModalStore();
-
-  // const [open, setOpen] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -44,7 +41,6 @@ export function ContactForm() {
     },
   });
 
-  // 2. Define a submit handler.
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       const response = await fetch("/api/contact", {
@@ -55,11 +51,10 @@ export function ContactForm() {
         body: JSON.stringify(values),
       });
 
-      form.reset();
-
       if (response.status === 200) {
+        form.reset();
         storeModal.onOpen({
-          title: "Thankyou!",
+          title: "Thank you!",
           description:
             "Your message has been received! I appreciate your contact and will get back to you shortly.",
           icon: Icons.successAnimated,
@@ -74,67 +69,91 @@ export function ContactForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-8 min-w-full"
+        className="w-full space-y-3" 
       >
-        <FormField
-          control={form.control}
-          name="name"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Name</FormLabel>
-              <FormControl>
-                <Input placeholder="Enter your name" {...field} />
-              </FormControl>
-              {/* <FormDescription>
-                                This is your public display name.
-                            </FormDescription> */}
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Email</FormLabel>
-              <FormControl>
-                <Input placeholder="Enter your email" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="message"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Message</FormLabel>
-              <FormControl>
-                <Textarea placeholder="Enter your message" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+        <div className="mb-2">
+          <h3 className="text-lg font-bold leading-none">Get in touch</h3>
+          <p className="text-xs text-muted-foreground mt-1">
+            Have a question or proposal?
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <FormField
+            control={form.control}
+            name="name"
+            render={({ field }) => (
+              <FormItem className="space-y-0">
+                <FormControl>
+                  <Input 
+                    placeholder="Name" 
+                    className="h-9 text-sm" 
+                    {...field} 
+                  />
+                </FormControl>
+                <FormMessage className="text-[10px]" />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem className="space-y-0">
+                <FormControl>
+                  <Input 
+                    placeholder="Email" 
+                    className="h-9 text-sm" 
+                    {...field} 
+                  />
+                </FormControl>
+                <FormMessage className="text-[10px]" />
+              </FormItem>
+            )}
+          />
+        </div>
+
+
         <FormField
           control={form.control}
           name="social"
           render={({ field }) => (
-            <FormItem>
-              <FormLabel>Social (optional)</FormLabel>
+            <FormItem className="space-y-0">
               <FormControl>
-                <Input placeholder="Link for social account" {...field} />
+                <Input 
+                  placeholder="Social Link (Optional)" 
+                  className="h-9 text-sm" 
+                  {...field} 
+                />
               </FormControl>
-              {/* <FormDescription>
-                                This is your public display name.
-                            </FormDescription> */}
-              <FormMessage />
+              <FormMessage className="text-[10px]" />
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+
+        <FormField
+          control={form.control}
+          name="message"
+          render={({ field }) => (
+            <FormItem className="space-y-0">
+              <FormControl>
+                <Textarea 
+                  placeholder="How can I help you?" 
+                  className="min-h-[80px] resize-none text-sm py-2"
+                  rows={3} 
+                  {...field} 
+                />
+              </FormControl>
+              <FormMessage className="text-[10px]" />
+            </FormItem>
+          )}
+        />
+
+
+        <Button type="submit" size="sm" className="w-full h-9 text-xs font-semibold">
+          Send Message
+          <Icons.arrowRight className="ml-2 h-3 w-3" />
+        </Button>
       </form>
     </Form>
   );

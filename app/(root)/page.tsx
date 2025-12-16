@@ -35,7 +35,7 @@ export default function IndexPage() {
     "@type": "Person",
     name: siteConfig.authorName,
     url: siteConfig.url,
-    image: siteConfig.ogImage,
+    //image: siteConfig.ogImage,
     jobTitle: "Full Stack Developer",
     sameAs: [siteConfig.links.github, siteConfig.links.twitter],
   };
@@ -96,7 +96,7 @@ export default function IndexPage() {
           I am a Full Stack Developer from India, I love to explore new
           technologies and challenging tasks, turning ideas into polished
           user-centric products. I have worked across various stacks and domains
-          and focused on delivering E2E solutions, have done 2 internships and
+          and focused on delivering E2E solutions, currently doing an internship and
           few freelance projects, apart from that I have co-authored a Research
           paper which is accepted by IEEE and have a Patent on my name. I have
           also been a Tech Lead in my University's IoT Lab mentoring and
@@ -140,32 +140,25 @@ export default function IndexPage() {
           </h5>
         </div>
         <MovingSkills />
-    
+  
 
-  <div className="mx-auto mt-16 flex flex-col items-center space-y-4 text-center">
-    <AnimatedText
-      as="h2"
-      className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
-    >
-      {pagesConfig.contact.title}
-    </AnimatedText>
-  </div>
 
-  <div className="mx-auto mt-12 flex w-full max-w-5xl flex-col items-start gap-6 lg:flex-row lg:gap-8">
-    
-    <div className="w-full flex-[1.5] rounded-3xl border border-border/120 bg-card/50 p-6 shadow-sm backdrop-blur-sm md:p-8">
-      <ContactForm />
-    </div>
+      <div className="mx-auto mt-12 flex w-full max-w-7xl flex-col gap-6 lg:flex-row lg:gap-8 lg:items-start px-4 md:px-8">
+        
+ 
+        <div className="flex w-full flex-[1.5] flex-col items-center justify-start gap-4">
+          
+          <GithubRedirectCard />
+          
+          <p className="text-center text-md font-medium text-muted-foreground animate-pulse mt-2 pb-3">
+            Made with <span className="text-red-500">❤️</span> by <span className="text-foreground">Aniket</span>
+          </p>
 
-    <div className="flex w-full flex-1 flex-col items-center justify-start gap-4 lg:items-center">
-      
-      <GithubRedirectCard />
-      
-      <p className="text-center text-md font-medium text-muted-foreground animate-pulse">
-        Made with <span className="text-red-500">❤️</span> by <span className="text-foreground">Aniket</span>
-      </p>
+        </div>
 
-    </div>
+        <div className="w-full flex-1 h-fit rounded-3xl border border-border/120 bg-card/50 p-6 shadow-sm backdrop-blur-sm md:p-8">
+          <ContactForm />
+        </div>
     
   </div>
     </ClientPageWrapper>

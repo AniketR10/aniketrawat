@@ -7,6 +7,7 @@ import React from "react";
 import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
 import { ExperienceInterface } from "@/config/experience";
+import { formatMonthYear } from "@/lib/utils";
 
 // Helper function to extract year from date
 const getYearFromDate = (date: Date): string => {
@@ -18,9 +19,9 @@ const getDurationText = (
   startDate: Date,
   endDate: Date | "Present"
 ): string => {
-  const startYear = getYearFromDate(startDate);
+  const startYear = formatMonthYear(startDate);
   const endYear =
-    typeof endDate === "string" ? "Present" : getYearFromDate(endDate);
+    typeof endDate === "string" ? "Present" : formatMonthYear(endDate);
   return `${startYear} - ${endYear}`;
 };
 

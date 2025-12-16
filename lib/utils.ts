@@ -14,6 +14,14 @@ export function formatDate(input: string | number): string {
   });
 }
 
+export function formatMonthYear(input: Date | string | number) : string {
+  const date = new Date(input);
+  return date.toLocaleDateString("en-US", {
+    month: "short",
+    year: "numeric"
+  })
+}
+
 export function formatDateFromObj(input: Date): string {
   const date = new Date(input);
   return date.toLocaleDateString("en-US", {

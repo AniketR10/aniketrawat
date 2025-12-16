@@ -1,55 +1,64 @@
 "use client";
 
-import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { ExternalLink, Github, Heart } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import {GitHubCalendar} from "react-github-calendar";
+import { useTheme } from "next-themes";
+import { buttonVariants } from "@/components/ui/button";
+
+import { Icons } from "@/components/common/icons";
 
 export default function GithubRedirectCard() {
   const [isHovered, setIsHovered] = useState(false);
+  const { theme } = useTheme();
 
   return (
     <Card
-      className="w-full h-fit max-w-sm overflow-hiddenshadow-lg transition-all duration-300 ease-in-out transform hover:scale-102 mt-5"
+      className="w-full h-fit overflow-hidden shadow-lg transition-all duration-300 ease-in-out transform mt-4 border border-border/50"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <CardContent className="p-8 flex flex-col items-center text-center">
-        <div className="mb-6">
-          <Heart
-            className={`w-12 h-12 transition-colors duration-300 ease-out ${
-              isHovered ? "text-red-500" : "text-muted-foreground"
-            }`}
+      <CardContent className="p-6 flex flex-col items-center text-center">
+        
+        <div className="flex items-center gap-3 mb-6 w-full justify-center">
+
+          <Icons.gitHub className={"w-6 h-6 text-primary transition-colors"} />
+          <h2 className="font-heading text-xl font-bold tracking-tight">
+            Github Activity
+          </h2>
+        </div>
+
+        <div className="w-full flex justify-center overflow-x-auto pb-2 scrollbar-hide">
+          <GitHubCalendar
+            username="AniketR10" 
+            colorScheme={theme === "dark" ? "dark" : "light"}
+            fontSize={12}
+            blockSize={10} 
+            blockMargin={4}
+            labels={{
+              totalCount: "{{count}} contributions in the last year",
+            }}
           />
         </div>
-        <h2 className="font-heading text-xl tracking-tight lg:text-3xl duration-300">
-          Like this template?
-        </h2>
-        <p className="mt-2 mb-10 font-heading text-lg text-muted-foreground">
-          It&#39;s open source. Explore and contribute on GitHub.
-        </p>
-        <Github className="w-10 h-10 text-muted-foreground mb-5" />
+
       </CardContent>
-      <CardFooter className="px-8 pb-8 pt-0">
+      
+      <CardFooter className="px-6 pb-6 pt-0">
         <Link
-          href={"https://github.com/AniketR10/aniketrawat"}
+          href={"https://github.com/AniketR10"}
           target="_blank"
           className={cn(
             buttonVariants({ variant: "outline" }),
-            "w-full bg-transparent border-2 transition-all duration-300 py-6"
+            "w-full bg-transparent border-dashed hover:border-solid transition-all duration-300"
           )}
         >
-          <span className="mr-2">Source Code</span>
-          <ExternalLink className="w-5 h-5" />
+          <span className="mr-2">View Full Profile</span>
+          <Icons.externalLink className="w-4 h-4" />
         </Link>
       </CardFooter>
-      <div
-        className={`h-1 bg-gradient-to-r from-red-500 to-red-500 transition-all duration-300 ease-out ${
-          isHovered ? "opacity-100" : "opacity-0"
-        }`}
-      ></div>
+      
     </Card>
   );
 }

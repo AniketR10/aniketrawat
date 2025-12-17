@@ -29,7 +29,7 @@ export default function MovingSkills() {
   const secondRow = skillsUnsorted.slice(halfLength);
 
   return (
-    <div className="w-full overflow-hidden py-10 space-y-8 relative">
+    <div className="w-full overflow-hidden py-10 space-y-6 relative">
     
 
       <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">

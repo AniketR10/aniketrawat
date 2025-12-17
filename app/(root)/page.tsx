@@ -134,7 +134,7 @@ export default function IndexPage() {
  
 </section>
     
-        <div className="mx-auto flex max-w-[58rem]  flex-col items-center space-y-4 text-center ">
+        <div className="mx-auto flex max-w-[58rem]  flex-col items-center space-y-4 text-center mt-32 md:mt-12">
            <h5 className="font-heading text-4xl font-bold leading-tight sm:text-2xl md:text-3xl lg:text-5xl">
             {pagesConfig.skills.title}
           </h5>
@@ -143,7 +143,7 @@ export default function IndexPage() {
   
 
 
-      <div className="mx-auto mt-12 flex w-full max-w-7xl flex-col gap-6 lg:flex-row lg:gap-8 lg:items-start px-4 md:px-8">
+      <div className="mx-auto mt-12 flex w-full max-w-7xl flex-col gap-6 lg:flex-row lg:gap-8 lg:items-start px-4 md:px-6">
         
  
         <div className="flex w-full flex-[1.5] flex-col items-center justify-start gap-4">
@@ -156,7 +156,7 @@ export default function IndexPage() {
 
         </div>
 
-        <div className="w-full flex-1 h-fit rounded-3xl border border-border/120 bg-card/50 p-6 shadow-sm backdrop-blur-sm md:p-8">
+       <div className="w-full flex-1 h-fit rounded-2xl border border-border/120 bg-card/50 p-5 shadow-sm backdrop-blur-sm lg:mt-4">
           <ContactForm />
         </div>
     

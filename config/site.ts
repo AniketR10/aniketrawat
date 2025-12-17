@@ -3,17 +3,12 @@ export const siteConfig = {
   authorName: "Aniket Rawat ",
   username: "AniketRawat",
   description:
-    "Aniket Rawat 's portfolio - A modern, responsive Next.js portfolio for developers.",
-  url: "https://nbarkiya.xyz",
+    "Aniket Rawat 's portfolio",
+  url: "https://aniketrawat.com",
   links: {
     twitter: "https://x.com/aniketrawat00",
     github: "https://github.com/AniketR10",
   },
-  // ogImage: "https://nbarkiya.xyz/profile-img.jpeg",
-  // iconIco:
-  //   "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/naman-favicon.ico",
-  // logoIcon:
-  //   "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357294/assets/naman-logo.png",
   keywords: [
     "Aniket Rawat",
     "Full Stack Developer",

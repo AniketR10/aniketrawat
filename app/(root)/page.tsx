@@ -22,7 +22,7 @@ import { ContactForm } from "@/components/forms/contact-form";
 import GithubRedirectCard from "@/components/contact/github-redirect-card";
 
 export const metadata: Metadata = {
-  title: `${pagesConfig.home.metadata.title} | Modern Next.js Developer Portfolio Template`,
+  title: `${pagesConfig.home.metadata.title}`,
   alternates: {
     canonical: siteConfig.url,
   },
@@ -44,7 +44,7 @@ export default function IndexPage() {
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Next.js Portfolio Template",
+    name: "Aniket's Portfolio",
     applicationCategory: "DeveloperApplication",
     operatingSystem: "Web",
     offers: {
@@ -134,7 +134,7 @@ export default function IndexPage() {
  
 </section>
     
-        <div className="mx-auto flex max-w-[58rem]  flex-col items-center space-y-4 text-center mt-32 md:mt-12">
+        <div className="mx-auto flex max-w-[58rem]  flex-col items-center space-y-4 text-center mt-32 md:mt-6">
            <h5 className="font-heading text-4xl font-bold leading-tight sm:text-2xl md:text-3xl lg:text-5xl">
             {pagesConfig.skills.title}
           </h5>

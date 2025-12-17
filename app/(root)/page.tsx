@@ -72,7 +72,7 @@ export default function IndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
       />
 
-      <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
+      <section className="space-y-6 pb-8 pt-28 mb-0 md:pb-12 md:py-20 lg:py-32 min-h-screen md:h-screen flex items-center">
  
   <div className="container flex max-w-[76rem] flex-col md:flex-row items-center gap-8 text-center md:text-left -mt-6">
     <div className="flex-1 flex flex-col items-center md:items-start">

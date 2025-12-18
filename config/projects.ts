@@ -38,6 +38,7 @@ export const Projects: ProjectInterface[] = [
     websiteLink: "https://hw.glich.co/resources/dsa",
     techStack: [
       "Typescript",
+      "Docker",
       "Next.js",
       "React",
       "PostgreSQL",
@@ -440,7 +441,7 @@ export const Projects: ProjectInterface[] = [
     shortDescription:
      "Built an end-to-end backend automation system that parses incoming Substack subscriber emails via Gmail API, triggers workflows through Google Pub/Sub, and auto-creates subscribers in Beehiiv using its API.",
     websiteLink: "https://stackout.co/",
-    techStack: ["Typescript", "Next.js", "pub/sub API", "Gmail API", "Beehiiv API"],
+    techStack: ["Typescript", "Docker", "Next.js", "pub/sub API", "Gmail API", "Beehiiv API"],
     startDate: new Date("2022-05-01"),
     endDate: new Date("2022-06-15"),
     companyLogoImg: "/projects/stackout/stack-logo.png",

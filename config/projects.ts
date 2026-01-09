@@ -220,71 +220,6 @@ export const Projects: ProjectInterface[] = [
     },
   },
   {
-    id: "job-portal",
-    companyName: "JobOrbit",
-    type: "Personal",
-    category: ["Mobile Dev", "Full Stack", "UI/UX"],
-    shortDescription:
-      "A full-stack application connecting employers and candidates with role-based access(RBAC). Core features include JWT authentication, on-click resume uploads/downloads, job search with filters, application tracking and automated email notifications.",
-    githubLink: "https://github.com/AniketR10/JobPortal",
-    techStack: ["React", "Next.js", "Node.js", "express.js", "Tailwind CSS", "Typescript", "MongoDB", "jwt", "REST", "Cloudinary", "Shadcn", "Vercel", "Render"],
-    websiteLink: "https://job-portal-frontend-ten-ashen.vercel.app/",
-    startDate: new Date("2021-07-14"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/apex/joborbit-ss.png",
-    pagesInfoArr: [
-      {
-        title: "Splash Screen",
-        description: "Custom animated splash screen with app branding",
-        imgArr: ["/projects/apex/app_7.webp"],
-      },
-      {
-        title: "Login/Signup Authentication",
-        description: "Secure user authentication system with Firebase",
-        imgArr: ["/projects/apex/app_1.webp"],
-      },
-      {
-        title: "All Products Explore Screen",
-        description: "Interactive product browsing with categories and filters",
-        imgArr: ["/projects/apex/app_3.webp"],
-      },
-      {
-        title: "Admin Panel",
-        description:
-          "Comprehensive admin dashboard for product and order management",
-        imgArr: ["/projects/apex/app_4.webp", "/projects/apex/app_6.webp"],
-      },
-      {
-        title: "Sidenav Navigation",
-        description: "Intuitive side navigation for easy app navigation",
-        imgArr: ["/projects/apex/app_5.webp"],
-      },
-      {
-        title: "Firebase Database",
-        description:
-          "Real-time database structure for efficient data management",
-        imgArr: ["/projects/apex/db.webp"],
-      },
-    ],
-    descriptionDetails: {
-      paragraphs: [
-        "The Apex Shopping App represents a comprehensive mobile e-commerce solution that I developed from the ground up using React Native and Firebase. This project showcases my ability to create a full-featured shopping application with both user and admin functionalities.",
-        "The application features a robust authentication system, allowing users to securely sign up and log in. The product exploration interface is designed with user experience in mind, incorporating smooth navigation and intuitive filtering options.",
-        "One of the key highlights is the admin panel, which provides complete control over product management, order processing, and inventory tracking. The integration with Firebase ensures real-time data synchronization and reliable data persistence.",
-        "The app's architecture emphasizes scalability and performance, utilizing Redux for state management and following best practices for mobile app development. The UI/UX design focuses on providing a seamless shopping experience across different device sizes.",
-      ],
-      bullets: [
-        "Implemented secure user authentication and authorization using Firebase",
-        "Designed and developed an intuitive product browsing and shopping cart system",
-        "Created a comprehensive admin panel for product and order management",
-        "Integrated real-time data synchronization using Firebase Database",
-        "Implemented state management using Redux for optimal performance",
-        "Designed responsive UI components following mobile-first principles",
-        "Incorporated smooth animations and transitions for enhanced user experience",
-      ],
-    },
-  },
-  {
     id: "theme-detect",
     companyName: "Wordpress ThemeDetect",
     type: "Professional",
@@ -390,6 +325,71 @@ export const Projects: ProjectInterface[] = [
         "Enabled an auto-rotating feature for the portfolio card, perpetually showcasing its various facets to observers.",
         "Introduced an instinctual user interaction mechanism, allowing viewers to comprehensively explore the card's dimensions through simple, intuitive dragging motions.",
         "Represented a fusion of technical prowess, artistic ingenuity, and interactive design in a project that reshapes the boundaries of conventional portfolio representation.",
+      ],
+    },
+  },
+  {
+    id: "job-portal",
+    companyName: "JobOrbit",
+    type: "Personal",
+    category: ["Mobile Dev", "Full Stack", "UI/UX"],
+    shortDescription:
+      "A full-stack application connecting employers and candidates with role-based access(RBAC). Core features include JWT authentication, on-click resume uploads/downloads, job search with filters, application tracking and automated email notifications.",
+    githubLink: "https://github.com/AniketR10/JobPortal",
+    techStack: ["React", "Next.js", "Node.js", "express.js", "Tailwind CSS", "Typescript", "MongoDB", "jwt", "REST", "Cloudinary", "Shadcn", "Vercel", "Render"],
+    websiteLink: "https://job-portal-frontend-ten-ashen.vercel.app/",
+    startDate: new Date("2021-07-14"),
+    endDate: new Date("2022-07-01"),
+    companyLogoImg: "/projects/apex/joborbit-ss.png",
+    pagesInfoArr: [
+      {
+        title: "Splash Screen",
+        description: "Custom animated splash screen with app branding",
+        imgArr: ["/projects/apex/app_7.webp"],
+      },
+      {
+        title: "Login/Signup Authentication",
+        description: "Secure user authentication system with Firebase",
+        imgArr: ["/projects/apex/app_1.webp"],
+      },
+      {
+        title: "All Products Explore Screen",
+        description: "Interactive product browsing with categories and filters",
+        imgArr: ["/projects/apex/app_3.webp"],
+      },
+      {
+        title: "Admin Panel",
+        description:
+          "Comprehensive admin dashboard for product and order management",
+        imgArr: ["/projects/apex/app_4.webp", "/projects/apex/app_6.webp"],
+      },
+      {
+        title: "Sidenav Navigation",
+        description: "Intuitive side navigation for easy app navigation",
+        imgArr: ["/projects/apex/app_5.webp"],
+      },
+      {
+        title: "Firebase Database",
+        description:
+          "Real-time database structure for efficient data management",
+        imgArr: ["/projects/apex/db.webp"],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "The Apex Shopping App represents a comprehensive mobile e-commerce solution that I developed from the ground up using React Native and Firebase. This project showcases my ability to create a full-featured shopping application with both user and admin functionalities.",
+        "The application features a robust authentication system, allowing users to securely sign up and log in. The product exploration interface is designed with user experience in mind, incorporating smooth navigation and intuitive filtering options.",
+        "One of the key highlights is the admin panel, which provides complete control over product management, order processing, and inventory tracking. The integration with Firebase ensures real-time data synchronization and reliable data persistence.",
+        "The app's architecture emphasizes scalability and performance, utilizing Redux for state management and following best practices for mobile app development. The UI/UX design focuses on providing a seamless shopping experience across different device sizes.",
+      ],
+      bullets: [
+        "Implemented secure user authentication and authorization using Firebase",
+        "Designed and developed an intuitive product browsing and shopping cart system",
+        "Created a comprehensive admin panel for product and order management",
+        "Integrated real-time data synchronization using Firebase Database",
+        "Implemented state management using Redux for optimal performance",
+        "Designed responsive UI components following mobile-first principles",
+        "Incorporated smooth animations and transitions for enhanced user experience",
       ],
     },
   },

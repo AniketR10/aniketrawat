@@ -166,6 +166,59 @@ export const Projects: ProjectInterface[] = [
       ],
     },
   },
+{
+    id: "i-am-unemployed",
+    companyName: "I Am Unemployed",
+    type: "Personal",
+    category: ["Full Stack", "Web Dev"],
+    shortDescription:
+      "A Neo-Brutalist job search platform made for people tired of getting ghosted. Features a real-time Reddit job feed scraper, a database of recently funded startups, their Founder socials, and a directory of YC founders for direct outreach.",
+    githubLink: "https://github.com/AniketR10/iamunemployed",
+    techStack: ["Next.js", "React", "Typescript", "Supabase", "PostgreSQL", "Tailwind CSS", "Python", "Github Actions", "Vercel"],
+    websiteLink: "https://www.iamunemployed.xyz",
+    startDate: new Date("2025-12-01"),
+    endDate: new Date(), 
+    companyLogoImg: "/projects/iamunemployed/image.png",
+    pagesInfoArr: [
+      {
+        title: "Live Job Feed",
+        description: "Real-time job aggregator scraping r/forhire and r/remotejobs with server-side filtering.",
+        imgArr: ["/projects/unemployed/feed-ss.png"],
+      },
+      {
+        title: "Startup & YC Database",
+        description: "Searchable directory of funded startups and YC founders for direct application outreach.",
+        imgArr: ["/projects/unemployed/startup-db.png"],
+      },
+      {
+        title: "Secure Authentication",
+        description: "Supabase Auth integration with Google OAuth and email magic links.",
+        imgArr: ["/projects/unemployed/auth-screen.png"],
+      },
+      {
+        title: "Neo-Brutalist UI",
+        description: "Distinctive high-contrast design language with bold borders and shadows.",
+        imgArr: ["/projects/unemployed/landing-hero.png"],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        " 'I Am Unemployed' is a direct response to the broken hiring market. Instead of traditional job boards where applications go to die, this platform aggregates real-time opportunities from Reddit and provides direct access to decision-makers at funded startups and YC companies.",
+        "The core of the application is powered by a custom Python scraper that runs on a schedule via GitHub Actions, fetching job posts from various subreddits and syncing them to a Supabase Postgres database. The frontend, built with Next.js 14, utilizes server-side rendering for optimal SEO and performance.",
+        "I implemented a distinct 'Neo-Brutalist' design aesthetic to stand out from corporate job boards. The application features robust filtering for communities and time ranges, ensuring users only see relevant, fresh opportunities.",
+        "Technical highlights include Row Level Security (RLS) for data protection, automated Cron jobs for data fetching, and a consolidated 'www' domain strategy on Vercel for maximum SEO authority.",
+      ],
+      bullets: [
+        "Built a custom Python web scraper using PRAW to fetch real-time jobs from Reddit",
+        "Automated data ingestion pipelines using GitHub Actions Cron jobs",
+        "Developed a high-performance frontend using Next.js 14 and Tailwind CSS",
+        "Integrated Supabase for Authentication (OAuth) and PostgreSQL database",
+        "Implemented complex server-side filtering for job communities and time ranges",
+        "Designed a unique Neo-Brutalist UI system with custom components",
+        "Optimized SEO and performance with Vercel edge network and domain redirections",
+      ],
+    },
+  },
   {
     id: "job-portal",
     companyName: "JobOrbit",

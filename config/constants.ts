@@ -31,6 +31,7 @@ export type ValidSkills =
   | "Typescript"
   | "Javascript"
   | "Github API"
+  | "Github Actions"
   | "HTML 5"
   | "CSS 3"
   | "React Native"

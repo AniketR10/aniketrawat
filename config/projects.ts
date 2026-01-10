@@ -543,7 +543,7 @@ export const Projects: ProjectInterface[] = [
     shortDescription:
     "Developed a backoffice system to manage and upload new CMS information, with automated content generation by the Gemini API, built a dedicated background-task API alongside the main Next.js API to offload heavy operations like AI content generation (Gemini API), R2 image uploads, and GitHub stats fetching, preventing timeouts and significantly improving site performance.",
     websiteLink: "https://www.contenttoolkit.co/",
-    techStack: ["Typescript", "Next.js", "Gemini API", "Github API", "Cloudflare"],
+    techStack: ["Typescript", "Next.js","Prisma", "PostgreSQL", "Gemini API", "Github API", "Cloudflare"],
     startDate: new Date("2022-05-01"),
     endDate: new Date("2022-06-15"),
     companyLogoImg: "/projects/contenttoolkit/toolkit.png",

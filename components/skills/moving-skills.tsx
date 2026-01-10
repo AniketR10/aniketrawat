@@ -1,11 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-// 1. IMPORT DATA DIRECTLY HERE
 import { skillsUnsorted, skillsInterface } from "@/config/skills"; 
-import { useTheme } from "next-themes";
 
-// 2. Remove the props interface since we don't need it anymore
 // interface SkillsCardProps {
 //   skills: skillsInterface[];
 // }
@@ -20,10 +17,8 @@ const SkillItem = ({ skill }: { skill: skillsInterface }) => {
   );
 };
 
-// 3. Remove "skills" from the arguments
 export default function MovingSkills() {
   
-  // 4. Use the imported data directly
   const halfLength = Math.ceil(skillsUnsorted.length / 2);
   const firstRow = skillsUnsorted.slice(0, halfLength);
   const secondRow = skillsUnsorted.slice(halfLength);

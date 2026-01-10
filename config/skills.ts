@@ -15,6 +15,16 @@ export const skillsUnsorted: skillsInterface[] = [
    
     icon: Icons.react,
   },
+   {
+    name: "Tanstack Query",
+   
+    icon: Icons.tanstack,
+  },
+   {
+    name: "Prisma",
+   
+    icon: Icons.SiPrisma,
+  },
   
  
   {

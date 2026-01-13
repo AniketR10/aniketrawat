@@ -98,9 +98,7 @@ export default function IndexPage() {
           user-centric products. I have worked across various stacks and domains
           and focused on delivering E2E solutions, currently doing an internship and
           few freelance projects, apart from that I have co-authored a Research
-          paper which is accepted by IEEE and have a Patent on my name. I have
-          also been a Tech Lead in my University's IoT Lab mentoring and
-          learning with my juniors on different tasks and organising events. In
+          paper which is accepted by IEEE and have a Patent on my name. In
           free time you will find me jogging, playing games, watching movies and
           writing blogs about recent developments in Tech, my blog articles
           consistently reach over 8,000+ readers each.

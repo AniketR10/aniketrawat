@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 };
 
 const BLOG_URLS = [
+  "https://hw.glich.co/p/ai-destroys-tailwindcss-to-aws-learns-from-mistakes",
   "https://hw.glich.co/p/ai-reshaping-entry-level-tech-jobs",
   "https://hw.glich.co/p/ai-coding-productivity-gains-friction-slows-teams-down",
   "https://hw.glich.co/p/software-development-predictions-for-2026",

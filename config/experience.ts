@@ -20,7 +20,7 @@ export const experiences: ExperienceInterface[] = [
     company: "Glich Technologies",
     location: "Remote, India",
     startDate: new Date("2025-06-13"),
-    endDate: "Present",
+    endDate: new Date("2025-12-31"),
     description: [
       "Built a complete DSA section by scraping 3,100+ LeetCode problems using Selenium, fetching related video explanations using YouTube Data API, and integrating company-specific insights and logos using Logo API. Optimized content delivery and storage using Cloudflare.",
       "Built WhatCMS (a CMS Scanner) that identifies a website’s CMS (WordPress, Joomla, Drupal, etc.) from just a URL, using the WhatWeb open-source tool for accurate & fast detection.",

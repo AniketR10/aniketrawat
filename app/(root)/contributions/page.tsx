@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 };
 
 const BLOG_URLS = [
+  "https://hw.glich.co/p/claude-opus-4-6-anthropic-raises-the-bar-for-agentic-ai",
   "https://hw.glich.co/p/android-updates-changing-developers-2026",
   "https://hw.glich.co/p/which-development-platforms-and-tools-to-learn-now",
   "https://hw.glich.co/p/ai-destroys-tailwindcss-to-aws-learns-from-mistakes",

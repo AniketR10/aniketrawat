@@ -21,8 +21,14 @@ export const SocialLinks: SocialInterface[] = [
     link: "https://x.com/aniketrawat00",
   },
   {
-    name: "Gmail",
+    name: "Leetcode",
     username: "aniketrawat826",
+    icon: Icons.leetcode,
+    link: "https://leetcode.com/u/aniketrawat826/",
+  },
+  {
+    name: "Gmail",
+    username: "aniketrawat826@gmail.com",
     icon: Icons.gmail,
     link: "mailto:aniketrawat826@gmail.com",
   },

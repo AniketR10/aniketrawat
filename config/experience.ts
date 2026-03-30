@@ -17,12 +17,12 @@ export const experiences: ExperienceInterface[] = [
   {
     id: "glichtech",
     position: "Full Stack Developer Intern",
-    company: "Glich Technologies",
+    company: "ScaleEngineer",
     location: "Remote, India",
     startDate: new Date("2025-06-13"),
     endDate: new Date("2025-12-31"),
     description: [
-      "Built a complete DSA section by scraping 3,100+ LeetCode problems using Selenium, fetching related video explanations using YouTube Data API, and integrating company-specific insights and logos using Logo API. Optimized content delivery and storage using Cloudflare.",
+      "Built a complete DSA section by scraping 3,100+ LeetCode problems used by 75000+ users using Selenium, fetching related video explanations using YouTube Data API, and integrating company-specific insights and logos using Logo API. Optimized content delivery and storage using Cloudflare.",
       "Built WhatCMS (a CMS Scanner) that identifies a website’s CMS (WordPress, Joomla, Drupal, etc.) from just a URL, using the WhatWeb open-source tool for accurate & fast detection.",
       "Built Wordpress ThemeDetect (a WordPress Theme & Plugin Detector) that uses the WordPress API and source-code crawling to extract theme metadata (name, version, author) and detect active plugins from a single URL.",
       "Developed a backoffice system to manage and upload new CMS information, with automated content generation by the Gemini API.",
@@ -31,8 +31,8 @@ export const experiences: ExperienceInterface[] = [
       "Built an n8n automation workflow to fetch daily tech news from top sources and auto-publish summaries to Discord using the Discord API, reducing research time."
     ],
     skills: ["Typescript", "React", "Next.js", "n8n", "Wordpress API", "Tailwind CSS", "Cloudflare", "Gmail API", "pub/sub API", "Beehiiv API", "Gemini API", "Discord API"],
-    companyUrl: "https://hw.glich.co/",
-    logo: "/logo.png",
+    companyUrl: "https://scaleengineer.com/",
+    logo: "/logo2.png",
   },
   {
     id: "kiitdu",

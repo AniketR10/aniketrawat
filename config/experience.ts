@@ -22,7 +22,7 @@ export const experiences: ExperienceInterface[] = [
     startDate: new Date("2025-06-13"),
     endDate: new Date("2025-12-31"),
     description: [
-      "Built a complete DSA section by scraping 3,100+ LeetCode problems used by 75000+ users using Selenium, fetching related video explanations using YouTube Data API, and integrating company-specific insights and logos using Logo API. Optimized content delivery and storage using Cloudflare.",
+      "Built a complete DSA section (used by 75000+ users) by scraping 3,100+ LeetCode problems using Selenium, fetching related video explanations using YouTube Data API, and integrating company-specific insights and logos using Logo API. Optimized content delivery and storage using Cloudflare.",
       "Built WhatCMS (a CMS Scanner) that identifies a website’s CMS (WordPress, Joomla, Drupal, etc.) from just a URL, using the WhatWeb open-source tool for accurate & fast detection.",
       "Built Wordpress ThemeDetect (a WordPress Theme & Plugin Detector) that uses the WordPress API and source-code crawling to extract theme metadata (name, version, author) and detect active plugins from a single URL.",
       "Developed a backoffice system to manage and upload new CMS information, with automated content generation by the Gemini API.",
@@ -46,8 +46,8 @@ export const experiences: ExperienceInterface[] = [
       "Published a Patent on BLOCKCHAIN-BASED CARBON FOOTPRINT MANAGEMENT SYSTEM WITH EDGE COMPUTING",
       "Developed a Prototype that measures Carbon Footprints of vehicles based on their type and Mode of Transport",
     ],
-    skills: ["Solidity", "Metamask", "HTML", "CSS"],
-    companyUrl: "https://agentprod.com",
+    skills: ["Javascript","Solidity", "Metamask", "HTML", "CSS"],
+    companyUrl: "",
     logo: "/experience/kiit.png",
   },
   

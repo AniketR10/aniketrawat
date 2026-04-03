@@ -36,7 +36,7 @@ export const experiences: ExperienceInterface[] = [
   },
   {
     id: "kiitdu",
-    position: "Blockchain Researcher",
+    position: "Research Apprentice",
     company: "KiiT University",
     location: "Bhubaneshwar, India",
     startDate: new Date("2024-10-01"),

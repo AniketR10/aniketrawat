@@ -1,7 +1,8 @@
 import { Metadata } from "next";
+import { unstable_cache } from "next/cache";
 
 import PageContainer from "@/components/common/page-container";
-import BlogCard from "@/components/contributions/contribution-card";
+import ContributionsList from "@/components/contributions/contributions-list";
 import { scrapeMetaData } from "@/lib/scrape-meta";
 import { pagesConfig } from "@/config/pages";
 
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
   title: "Blog | Aniket Rawat",
   description: "Writing about technology, coding, and my experiences.",
 };
+
+export const revalidate = 86400;
 
 const BLOG_URLS = [
   "https://hw.glich.co/p/coding-faster-building-right-2026-quality",
@@ -57,21 +60,23 @@ const BLOG_URLS = [
 
 ];
 
+const getCachedBlogs = unstable_cache(
+  async () => Promise.all(BLOG_URLS.map((url) => scrapeMetaData(url))),
+  ["contributions-blog-metadata"],
+  {
+    revalidate,
+  }
+);
+
 export default async function BlogPage() {
-  const blogs = await Promise.all(
-    BLOG_URLS.map((url) => scrapeMetaData(url))
-  );
+  const blogs = await getCachedBlogs();
 
   return (
     <PageContainer
       title={pagesConfig.contributions.title}
       description={pagesConfig.contributions.description}
     >
-      <div className="mx-auto grid justify-center gap-6 sm:grid-cols-2 lg:grid-cols-3 w-full mt-8">
-        {blogs.map((blog, index) => (
-          <BlogCard key={index} data={blog} />
-        ))}
-      </div>
+      <ContributionsList blogs={blogs} />
     </PageContainer>
   );
 }

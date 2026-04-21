@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 export const revalidate = 86400;
 
 const BLOG_URLS = [
+  "https://scaleengineer.com/news/claude-opus-4-7-smarter-real-work",
   "https://hw.glich.co/p/coding-faster-building-right-2026-quality",
   "https://hw.glich.co/p/amazon-bar-raiser-round-explained",
   "https://hw.glich.co/p/great-documentation-more-than-ai",
@@ -57,7 +58,6 @@ const BLOG_URLS = [
   "https://hw.glich.co/p/cloudflare-containers-nvidia-reaching-4-trillion-just-another-productive-week-in-tech",
   "https://hw.glich.co/p/icloud-down-css-got-smart-what-s-going-on-in-tech-town",
   "https://hw.glich.co/p/outages-password-leaks-what-else-happened-this-week",
-
 ];
 
 const getCachedBlogs = unstable_cache(
@@ -65,7 +65,7 @@ const getCachedBlogs = unstable_cache(
   ["contributions-blog-metadata"],
   {
     revalidate,
-  }
+  },
 );
 
 export default async function BlogPage() {
@@ -80,3 +80,4 @@ export default async function BlogPage() {
     </PageContainer>
   );
 }
+

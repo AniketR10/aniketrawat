@@ -22,9 +22,9 @@ export const SocialLinks: SocialInterface[] = [
   },
   {
     name: "Leetcode",
-    username: "aniketrawat826",
+    username: "aniketxd01",
     icon: Icons.leetcode,
-    link: "https://leetcode.com/u/aniketrawat826/",
+    link: "https://leetcode.com/u/aniketxd01/",
   },
   {
     name: "Gmail",

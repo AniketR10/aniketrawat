@@ -12,5 +12,9 @@ export const routesConfig: any = {
       title: "Blogs",
       href: "/contributions",
     },
+    {
+      title: "Open Source",
+      href: "/oss",
+    },
   ],
 };

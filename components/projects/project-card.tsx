@@ -80,7 +80,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </button>
         )}
         
-        <div className="flex gap-2 flex-wrap pt-2 mt-auto">
+        <div className="hidden sm:flex gap-2 flex-wrap pt-2 mt-auto">
           <ChipContainer textArr={project.techStack} />
         </div>
       </div>

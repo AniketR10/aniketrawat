@@ -40,7 +40,14 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   const previewText = isLong ? words.slice(0,20).join(" ") + " ..." : firstPara;
 
   return (
-    <div className="group relative w-full overflow-hidden rounded-lg border bg-background p-3 sm:p-4">
+    <div className="group relative w-full overflow-hidden rounded-lg border bg-background p-3 sm:p-4 hover:bg-accent/40 transition-colors duration-300">
+      
+      <Link 
+        href={`/experience/${experience.id}`} 
+        className="absolute inset-0 z-0 sm:hidden"
+        aria-label={`View details for ${experience.position}`}
+      />
+
       <div className="absolute top-4 right-4 z-10 hidden sm:block">
         <Button
           variant="outline"
@@ -54,7 +61,9 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
           </Link>
         </Button>
       </div>
-      <div className="flex items-start gap-3 sm:gap-4">
+
+      {/* Main content wrapper needs relative z-index so it sits above the mobile overlay link */}
+      <div className="flex items-start gap-3 sm:gap-4 relative z-0 pointer-events-none sm:pointer-events-auto">
         {experience.logo && (
           <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg border-2 border-border overflow-hidden bg-white flex-shrink-0">
             <Image
@@ -77,7 +86,8 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
                   href={experience.companyUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors flex-shrink-0 mt-0.5 sm:mt-0"
+                  // Added relative z-10 and pointer-events-auto so this specific link still works on mobile!
+                  className="text-muted-foreground hover:text-foreground transition-colors flex-shrink-0 mt-0.5 sm:mt-0 relative z-10 pointer-events-auto"
                 >
                   <Icons.externalLink className="w-4 h-4" />
                 </a>

@@ -1,25 +1,16 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import Script from "next/script";
 
-import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
-import { Icons } from "@/components/common/icons";
-import ExperienceCard from "@/components/experience/experience-card";
-import ProjectCard from "@/components/projects/project-card";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { experiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
-import { featuredProjects } from "@/config/projects";
 import { siteConfig } from "@/config/site";
-import { skillsUnsorted } from "@/config/skills";
-import { cn } from "@/lib/utils";
-import profileImg from "@/public/profile-img.jpeg";
 import MovingSkills from "@/components/skills/moving-skills";
 import { ContactForm } from "@/components/forms/contact-form";
 import GithubRedirectCard from "@/components/contact/github-redirect-card";
+import ExperienceSection from "@/components/experience/exp-section";
+import ProjectsSection from "@/components/projects/project-section";
 
 export const metadata: Metadata = {
   title: `${pagesConfig.home.metadata.title}`,
@@ -88,7 +79,7 @@ export default function IndexPage() {
         delay={0.4}
         className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl mt-2"
       >
-        Full Stack Developer
+        I ship!
       </AnimatedText>
       
       <div className="mt-4 max-w-[42rem]">
@@ -96,12 +87,12 @@ export default function IndexPage() {
           I am a Full Stack Developer from India, I love to explore new
           technologies and challenging tasks, turning ideas into polished
           user-centric products. I have worked across various stacks and domains
-          and focused on delivering E2E solutions, currently doing an internship and
-          freelance projects, apart from that I have co-authored a Research
+          and focused on delivering E2E solutions, have done 2 internships and
+          few freelance projects, apart from that I have co-authored a Research
           paper which is accepted by IEEE and have a Patent on my name. In
-          free time you will find me jogging, playing games, watching movies and
-          writing blogs about recent developments in Tech, my blog articles
-          consistently reach over 8,000+ readers each.
+          free time you will find me exploring mysteries of space and geopolitics. I also
+          write blogs about recent developments in Tech, my blog articles
+          consistently reach over 8k+ readers each.
         </p>
       </div>
 
@@ -142,23 +133,23 @@ export default function IndexPage() {
 
 
       <div className="mx-auto mt-12 flex w-full max-w-7xl flex-col gap-6 lg:flex-row lg:gap-8 lg:items-start px-4 md:px-6">
-        
- 
-        <div className="flex w-full flex-[1.5] flex-col items-center justify-start gap-4">
-          
+        <div className="flex w-full flex-[1.5] flex-col justify-start gap-4">
           <GithubRedirectCard />
-          
-          <p className="text-center text-md font-medium text-muted-foreground animate-pulse mt-2 pb-3">
-            Made with <span className="text-red-500">❤️</span> by <span className="text-foreground">Aniket</span>
-          </p>
-
         </div>
 
-       <div className="w-full flex-1 h-fit rounded-2xl border border-border/120 bg-card/50 p-5 shadow-sm backdrop-blur-sm lg:mt-4">
+        <div className="w-full flex-1 h-fit rounded-2xl border border-border/120 bg-card/50 p-5 shadow-sm backdrop-blur-sm lg:mt-4">
           <ContactForm />
         </div>
-    
-  </div>
+      </div>
+
+      <div className="mx-auto mt-6 w-full max-w-7xl flex flex-col gap-6 px-4 md:px-6">
+        <ExperienceSection/>
+        <ProjectsSection/>
+
+        <p className="text-center text-md font-medium text-muted-foreground animate-pulse mt-2 pb-3">
+          Made with <span className="text-red-500">❤️</span> by <span className="text-foreground">Aniket</span>
+        </p>
+      </div>
     </ClientPageWrapper>
   );
 }

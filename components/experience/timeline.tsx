@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import { AnimatedSection } from "@/components/common/animated-section";
 import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
 import { ExperienceInterface } from "@/config/experience";
@@ -41,13 +40,7 @@ const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
   return (
     <div className="space-y-4">
       {sortedExperiences.map((experience, index) => (
-        <AnimatedSection
-          key={experience.id}
-          delay={0.1 * (index + 1)}
-          direction="up"
-        >
-          <ExperienceCard experience={experience}></ExperienceCard>
-        </AnimatedSection>
+          <ExperienceCard key={experience.id} experience={experience}></ExperienceCard>
       ))}
     </div>
   );

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "title": "feat(agents): add /agents bus shared context channel (#1505)",
+    "url": "https://github.com/Tracer-Cloud/opensre/pull/1744",
+    "repository": {
+      "nameWithOwner": "Tracer-Cloud/opensre",
+      "url": "https://github.com/Tracer-Cloud/opensre"
+    }
+  },
+  {
+    "id": "2",
+    "title": "fix(cleanup): remove remaining exception noqas and SIM115 noqa by add…",
+    "url": "https://github.com/Tracer-Cloud/opensre/pull/1613",
+    "repository": {
+      "nameWithOwner": "Tracer-Cloud/opensre",
+      "url": "https://github.com/Tracer-Cloud/opensre"
+    }
+  },
+  {
+    "id": "3",
+    "title": "Remove E402, node ARG001, and straggler noqas (PR 2 of 3)",
+    "url": "https://github.com/Tracer-Cloud/opensre/pull/1576",
+    "repository": {
+      "nameWithOwner": "Tracer-Cloud/opensre",
+      "url": "https://github.com/Tracer-Cloud/opensre"
+    }
+  },
+  {
+    "id": "4",
+    "title": "Remove dead noqa directives and fix mechanical lint warnings",
+    "url": "https://github.com/Tracer-Cloud/opensre/pull/1537",
+    "repository": {
+      "nameWithOwner": "Tracer-Cloud/opensre",
+      "url": "https://github.com/Tracer-Cloud/opensre"
+    }
+  },
+  {
+    "id": "5",
+    "title": "refactor(cli): remove /stop placeholder; /tasks + /cancel canonical",
+    "url": "https://github.com/Tracer-Cloud/opensre/pull/1405",
+    "repository": {
+      "nameWithOwner": "Tracer-Cloud/opensre",
+      "url": "https://github.com/Tracer-Cloud/opensre"
+    }
+  },
+  {
+    "id": "6",
+    "title": "test(coralogix): add direct unit tests for CoralogixClient",
+    "url": "https://github.com/Tracer-Cloud/opensre/pull/1282",
+    "repository": {
+      "nameWithOwner": "Tracer-Cloud/opensre",
+      "url": "https://github.com/Tracer-Cloud/opensre"
+    }
+  },
+  {
+    "id": "7",
+    "title": "Fix/1114 health summary failure aliases",
+    "url": "https://github.com/Tracer-Cloud/opensre/pull/1184",
+    "repository": {
+      "nameWithOwner": "Tracer-Cloud/opensre",
+      "url": "https://github.com/Tracer-Cloud/opensre"
+    }
+  },
+  {
+    "id": "8",
+    "title": "Added misère game as a slight variation of the nim",
+    "url": "https://github.com/cp-algorithms/cp-algorithms/pull/1314",
+    "repository": {
+      "nameWithOwner": "cp-algorithms/cp-algorithms",
+      "url": "https://github.com/cp-algorithms/cp-algorithms"
+    }
+  },
+  {
+    "id": "9",
+    "title": "Included Problem 1916- B Codefroces",
+    "url": "https://github.com/cp-algorithms/cp-algorithms/pull/1309",
+    "repository": {
+      "nameWithOwner": "cp-algorithms/cp-algorithms",
+      "url": "https://github.com/cp-algorithms/cp-algorithms"
+    }
+  },  
+  {
+    "id": "10",
+    "title": "add reflex_episode_chache_bytes_total gauge + helper and EpisodeCache…",
+    "url": "https://github.com/FastCrest/reflex-vla/pull/106",
+    "repository": {
+      "nameWithOwner": "FastCrest/reflex-vla",
+      "url": "https://github.com/FastCrest/reflex-vla"
+    }
+  }
+]

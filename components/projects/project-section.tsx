@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 
 import PageContainer from "@/components/common/page-container";
 import ProjectCard from "@/components/projects/project-card";
@@ -6,10 +5,6 @@ import { ResponsiveTabs } from "@/components/ui/responsive-tabs";
 import { pagesConfig } from "@/config/pages";
 import { Projects } from "@/config/projects";
 
-export const metadata: Metadata = {
-  title: pagesConfig.projects.metadata.title,
-  description: pagesConfig.projects.metadata.description,
-};
 
 const renderContent = (tabVal: string) => {
   let projectArr = Projects;
@@ -28,7 +23,7 @@ const renderContent = (tabVal: string) => {
   );
 };
 
-export default function ProjectsPage() {
+export default function ProjectsSection() {
   const tabItems = [
     {
       value: "personal",
@@ -43,12 +38,13 @@ export default function ProjectsPage() {
   ];
 
   return (
+    <section id="projects" className="scroll-mt-24">
     <PageContainer
       title={pagesConfig.projects.title}
       description={pagesConfig.projects.description}
     >
       <ResponsiveTabs items={tabItems} defaultValue="personal" />
     </PageContainer>
-
+    </section>
   );
 }

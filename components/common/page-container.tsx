@@ -15,11 +15,9 @@ export default function PageContainer({
 }: PageContainerProps) {
   return (
     <ClientPageWrapper>
-      <div className="pt-20 sm:pt-24">
-        
+      <div className="w-full">
         <PageHeader title={title} description={description}/>
-        
-        <div className="mx-6">{children}</div>
+        <div className="w-full">{children}</div>
       </div>
     </ClientPageWrapper>
   );

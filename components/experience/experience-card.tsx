@@ -40,7 +40,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   const previewText = isLong ? words.slice(0,20).join(" ") + " ..." : firstPara;
 
   return (
-    <div className=" group relative overflow-hidden rounded-lg border bg-background p-3 sm:p-4 max-w-6xl mx-auto transition-all duration-300 ">
+    <div className="group relative w-full overflow-hidden rounded-lg border bg-background p-3 sm:p-4">
       <div className="absolute top-4 right-4 z-10 hidden sm:block">
         <Button
           variant="outline"

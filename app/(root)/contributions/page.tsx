@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 export const revalidate = 86400;
 
 const BLOG_URLS = [
+  "https://scaleengineer.com/news/why-developers-still-dont-fully-trust-ai-coding-agents",
   "https://scaleengineer.com/news/the-bottleneck-was-never-the-code",
   "https://scaleengineer.com/news/self-healing-tests-dont-solve-the-real-problem",
   "https://hw.glich.co/p/software-engineering-no-longer-lifetime-career-ai-shift",

@@ -9,30 +9,13 @@ import prsData from "@/data/oss-prs.json";
 
 
 export default function ExperienceSection() {
-
-  // 1. Group the PRs by repository name
-  const groupedPRs = prsData.reduce((acc: any, pr: any) => {
-    const repoName = pr.repository.nameWithOwner;
-    if (!acc[repoName]) {
-      acc[repoName] = {
-        repoUrl: pr.repository.url,
-        prs: [],
-      };
-    }
-    acc[repoName].prs.push(pr);
-    return acc;
-  }, {});
-
-  // 2. Convert the grouped object back into an array so we can map over it
-  const repositories = Object.entries(groupedPRs).sort(
-    (a:any, b:any) => b[1].prs.length - a[1].prs.length
-  );
+  const repositories = [...prsData].sort((a, b) => b.prs.length - a.prs.length);
 
   return (
     <section id="experiences" className="scroll-mt-24">
     <PageContainer title={pagesConfig.experience.title}>
       <div className="flex w-full flex-col gap-16 mt-8">
-        
+
         <section className="flex flex-col">
           <Timeline experiences={experiences} />
         </section>
@@ -45,15 +28,16 @@ export default function ExperienceSection() {
           </div>
 
           <div className="flex w-full flex-col gap-4">
-            {repositories.map(([repoName, data]: any) => {
-              const shortRepoName = repoName.split("/").pop() || repoName;
+            {repositories.map((repo) => {
+              const shortRepoName = repo.repository.nameWithOwner.split("/").pop() || repo.repository.nameWithOwner;
+              const sortedPrs = [...repo.prs].sort((a, b) => Number(b.id) - Number(a.id));
 
               return (
-                <OSSRepoCard 
-                  key={repoName} 
-                  repoName={shortRepoName} 
-                  repoUrl={data.repoUrl} 
-                  prs={data.prs} 
+                <OSSRepoCard
+                  key={repo.repository.nameWithOwner}
+                  repoName={shortRepoName}
+                  repoUrl={repo.repository.url}
+                  prs={sortedPrs}
                 />
               );
             })}

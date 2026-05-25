@@ -84,10 +84,10 @@ export default function IndexPage() {
       
       <div className="mt-4 max-w-[42rem]">
         <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-          I am a Full Stack Developer from India, I love to explore new
+          I am a Software Engineer, I love to explore new
           technologies and challenging tasks, turning ideas into polished
           user-centric products. I have worked across various stacks and domains
-          and focused on delivering E2E solutions, have done 2 internships and
+          and focused on delivering E2E solutions, currently working as SDE Intern and have done 2 internships and
           few freelance projects, apart from that I have co-authored a Research
           paper which is accepted by IEEE and have a Patent on my name. In
           free time you will find me exploring mysteries of space and geopolitics. I also

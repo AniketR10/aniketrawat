@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 export const revalidate = 86400;
 
 const BLOG_URLS = [
+  "https://scaleengineer.com/news/claude-vs-mimo-telegram-on-watch-and-share-your-ai-agents-freely",
   "https://scaleengineer.com/news/bots-generate-more-web-traffic-than-humans",
   "https://scaleengineer.com/news/everything-you-need-to-know-about-claude-opus-4-8",
   "https://scaleengineer.com/news/google-io-2026-everything-you-need-to-know",

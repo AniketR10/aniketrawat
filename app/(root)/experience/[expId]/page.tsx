@@ -63,7 +63,7 @@ export default async function ExperienceDetailPage({
   const experience = experiences.find((c) => c.id === expId);
 
   if (!experience) {
-    redirect("/experience");
+    redirect("/#experiences");
   }
 
   const tabItems = [
@@ -116,7 +116,7 @@ export default async function ExperienceDetailPage({
       <div className="container max-w-4xl mx-auto py-8 px-4">
         <AnimatedSection className="mb-6">
           <Button variant="ghost" size="sm" className="mb-4" asChild>
-            <Link href="/experience">
+            <Link href="/#experiences">
               <Icons.chevronLeft className="mr-2 h-4 w-4" />
               Back to Experience
             </Link>
@@ -184,7 +184,7 @@ export default async function ExperienceDetailPage({
 
         <AnimatedSection delay={0.4} className="flex justify-center mt-8">
           <Button variant="outline" asChild>
-            <Link href="/experience">
+            <Link href="/#experiences">
               <Icons.chevronLeft className="mr-2 h-4 w-4" />
               View All Experience
             </Link>

@@ -14,6 +14,16 @@ export const metadata: Metadata = {
 export const revalidate = 86400;
 
 const BLOG_URLS = [
+  "https://scaleengineer.com/news/anthropic-project-parka-claude-meeting-ai-agents",
+  "https://scaleengineer.com/news/google-gemini-3-7-flash-coding-ai-agents",
+  "https://scaleengineer.com/news/why-open-source-ai-models-havent-replaced-openai-and-anthropic-yet",
+  "https://scaleengineer.com/news/google-launches-lyria-3-5-major-upgrade-for-ai-music-creation",
+  "https://scaleengineer.com/news/why-crud-is-dead",
+  "https://scaleengineer.com/news/gpt-5-6-openais-smartest-and-most-efficient-ai-model-yet",
+  "https://scaleengineer.com/news/meta-muse-spark-agentic-ai",
+  "https://scaleengineer.com/news/ai-labels-lower-social-media-engagement",
+  "https://scaleengineer.com/news/glm-5-2-open-ai-model",
+  "https://scaleengineer.com/news/why-ai-keeps-forgetting-what-developers-already-told-it",
   "https://scaleengineer.com/news/claude-vs-mimo-telegram-on-watch-and-share-your-ai-agents-freely",
   "https://scaleengineer.com/news/bots-generate-more-web-traffic-than-humans",
   "https://scaleengineer.com/news/everything-you-need-to-know-about-claude-opus-4-8",

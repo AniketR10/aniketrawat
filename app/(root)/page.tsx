@@ -84,15 +84,11 @@ export default function IndexPage() {
       
       <div className="mt-4 max-w-[42rem]">
         <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-          I am a Software Engineer, I love to explore new
-          technologies and challenging tasks, turning ideas into polished
-          user-centric products. I have worked across various stacks and domains
-          and focused on delivering E2E solutions, currently working as SDE Intern and have done 2 internships and
-          few freelance projects, apart from that I have co-authored a Research
-          paper which is accepted by IEEE and have a Patent on my name. In
-          free time you will find me exploring mysteries of space and geopolitics. I also
-          write blogs about recent developments in Tech, my blog articles
-          consistently reach over 8k+ readers each.
+          I am a Software Engineer and open-source contributor. I am the core maintainer
+          of Screenshot-studio.com (1k+ GitHub stars and 21k MAU) with 50+ PRs merged across
+          open-source repositories. Also building iamunemployed.xyz(360+ users). I enjoy building end-to-end products, exploring new
+          technologies, and contributing to open source. In my free time, I explore the
+          mysteries of space and write about tech.
         </p>
       </div>
 

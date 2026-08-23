@@ -6,49 +6,288 @@
     },
     "prs": [
       {
-        "id": "1",
+        "id": "5347",
+        "title": "refactor(notifications): register outbound adapters only from bootstrap",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/5347"
+      },
+      {
+        "id": "5296",
+        "title": "refactor(eks): split tools/__init__.py into one module per tool",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/5296"
+      },
+      {
+        "id": "4791",
+        "title": "fix(gateway): pin the Slack bot token to Slack hosts on attachment fetch",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/4791"
+      },
+      {
+        "id": "4782",
+        "title": "perf(filestorage): parallelize push with a provider-declared cap",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/4782"
+      },
+      {
+        "id": "4627",
+        "title": "feat(filestorage): let users exclude paths from remote sync",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/4627"
+      },
+      {
+        "id": "4507",
+        "title": "refactor(openclaw): split MCP bridge tool types, results, and params …",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/4507"
+      },
+      {
+        "id": "4183",
+        "title": "refactor(mcp): share unavailable_response across MCP bridge tools",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/4183"
+      },
+      {
+        "id": "4163",
+        "title": "refactor(integrations): share relational read-only query wrapper; ado…",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/4163"
+      },
+      {
+        "id": "4110",
+        "title": "fix(shell): record /mcp unknown subcommand as a failed turn",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/4110"
+      },
+      {
+        "id": "3856",
+        "title": "test(hermes): extend sink/delivery coverage (#3587)",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/3856"
+      },
+      {
+        "id": "3667",
+        "title": "feat(fix_sentry_issue): open a PR for the fix, triggerable in natural…",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/3667"
+      },
+      {
+        "id": "3306",
+        "title": "feat(tools): add fix_sentry_issue tool (Sentry URL -> Pi fix diff)",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/3306"
+      },
+      {
+        "id": "3224",
+        "title": "feat(tools): add Pi coding tool + integration for submitting coding t…",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/3224"
+      },
+      {
+        "id": "3176",
+        "title": "feat(llm): add Pi CLI (pi.dev) as a BYOK subprocess LLM provider",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/3176"
+      },
+      {
+        "id": "2892",
+        "title": "fix(wizard): persist Slack webhook to integration store after guided …",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/2892"
+      },
+      {
+        "id": "2848",
+        "title": "fix(watchdog): resolve Telegram creds from integration store, env, or…",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/2848"
+      },
+      {
+        "id": "2232",
+        "title": "feat(twilio): add Twilio SMS as a first-class outbound channel alongs…",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/2232"
+      },
+      {
+        "id": "2137",
+        "title": "fix(hermes): prevent PatternRule/RepeatRule false positives on logger…",
+        "url": "https://github.com/Tracer-Cloud/opensre/pull/2137"
+      },
+      {
+        "id": "1744",
         "title": "feat(agents): add /agents bus shared context channel (#1505)",
         "url": "https://github.com/Tracer-Cloud/opensre/pull/1744"
       },
       {
-        "id": "2",
+        "id": "1613",
         "title": "fix(cleanup): remove remaining exception noqas and SIM115 noqa by add…",
         "url": "https://github.com/Tracer-Cloud/opensre/pull/1613"
       },
       {
-        "id": "3",
+        "id": "1576",
         "title": "Remove E402, node ARG001, and straggler noqas (PR 2 of 3)",
         "url": "https://github.com/Tracer-Cloud/opensre/pull/1576"
       },
       {
-        "id": "4",
+        "id": "1537",
         "title": "Remove dead noqa directives and fix mechanical lint warnings",
         "url": "https://github.com/Tracer-Cloud/opensre/pull/1537"
       },
       {
-        "id": "5",
+        "id": "1405",
         "title": "refactor(cli): remove /stop placeholder; /tasks + /cancel canonical",
         "url": "https://github.com/Tracer-Cloud/opensre/pull/1405"
       },
       {
-        "id": "6",
+        "id": "1282",
         "title": "test(coralogix): add direct unit tests for CoralogixClient",
         "url": "https://github.com/Tracer-Cloud/opensre/pull/1282"
       },
       {
-        "id": "7",
+        "id": "1184",
         "title": "Fix/1114 health summary failure aliases",
         "url": "https://github.com/Tracer-Cloud/opensre/pull/1184"
+      }
+    ]
+  },
+  {
+    "repository": {
+      "nameWithOwner": "opennookorg/screenshot-studio",
+      "url": "https://github.com/opennookorg/screenshot-studio"
+    },
+    "prs": [
+      {
+        "id": "110",
+        "title": "add persisted state on hard reload",
+        "url": "https://github.com/opennookorg/screenshot-studio/pull/110"
       },
       {
-        "id": "8",
-        "title": "fix(hermes): prevent PatternRule/RepeatRule false positives on logger names",
-        "url": "https://github.com/Tracer-Cloud/opensre/pull/2137"
+        "id": "107",
+        "title": "saving fixes",
+        "url": "https://github.com/opennookorg/screenshot-studio/pull/107"
       },
       {
-        "id": "9",
-        "title": "feat(twilio): add Twilio SMS as a first-class outbound channel alongside legacy WhatsApp via a unified Twilio integration",
-        "url": "https://github.com/Tracer-Cloud/opensre/pull/2232"
+        "id": "105",
+        "title": "fix: persist state on hard refresh",
+        "url": "https://github.com/opennookorg/screenshot-studio/pull/105"
+      },
+      {
+        "id": "104",
+        "title": "fix:deleting the whole progress on hard refresh locally",
+        "url": "https://github.com/opennookorg/screenshot-studio/pull/104"
+      },
+      {
+        "id": "103",
+        "title": "add batch exports",
+        "url": "https://github.com/opennookorg/screenshot-studio/pull/103"
+      },
+      {
+        "id": "96",
+        "title": "Fix progress bar jumping to ~50% instantly by removing double-scaled …",
+        "url": "https://github.com/opennookorg/screenshot-studio/pull/96"
+      },
+      {
+        "id": "95",
+        "title": "Add hardware-accelerated WebCodecs path for WebM export, falling back…",
+        "url": "https://github.com/opennookorg/screenshot-studio/pull/95"
+      },
+      {
+        "id": "93",
+        "title": "shortened the export cancelled toast duration",
+        "url": "https://github.com/opennookorg/screenshot-studio/pull/93"
+      },
+      {
+        "id": "92",
+        "title": "shortened the export cancelled toast duration",
+        "url": "https://github.com/opennookorg/screenshot-studio/pull/92"
+      },
+      {
+        "id": "91",
+        "title": "add cancel export option so that we can cancel the export",
+        "url": "https://github.com/opennookorg/screenshot-studio/pull/91"
+      },
+      {
+        "id": "88",
+        "title": "export webm videos via ffmpeg to increase the speed",
+        "url": "https://github.com/opennookorg/screenshot-studio/pull/88"
+      },
+      {
+        "id": "87",
+        "title": "update docs",
+        "url": "https://github.com/opennookorg/screenshot-studio/pull/87"
+      },
+      {
+        "id": "86",
+        "title": "use microlink in-place for screen-shot",
+        "url": "https://github.com/opennookorg/screenshot-studio/pull/86"
+      },
+      {
+        "id": "74",
+        "title": "feat: add canvas rulers and grid with customizable intervals",
+        "url": "https://github.com/opennookorg/screenshot-studio/pull/74"
+      },
+      {
+        "id": "71",
+        "title": "fix: use imageScale to size preset thumbnail container instead of CSS…",
+        "url": "https://github.com/opennookorg/screenshot-studio/pull/71"
+      }
+    ]
+  },
+  {
+    "repository": {
+      "nameWithOwner": "tempestai-dev/tempest",
+      "url": "https://github.com/tempestai-dev/tempest"
+    },
+    "prs": [
+      {
+        "id": "82",
+        "title": "add pagination and caching",
+        "url": "https://github.com/tempestai-dev/tempest/pull/82"
+      },
+      {
+        "id": "80",
+        "title": "parallelzie seq gh calls",
+        "url": "https://github.com/tempestai-dev/tempest/pull/80"
+      },
+      {
+        "id": "55",
+        "title": "fix pr merge issue",
+        "url": "https://github.com/tempestai-dev/tempest/pull/55"
+      },
+      {
+        "id": "52",
+        "title": "add linear order",
+        "url": "https://github.com/tempestai-dev/tempest/pull/52"
+      },
+      {
+        "id": "33",
+        "title": "text fix",
+        "url": "https://github.com/tempestai-dev/tempest/pull/33"
+      },
+      {
+        "id": "31",
+        "title": "add small badge node on multiple connections",
+        "url": "https://github.com/tempestai-dev/tempest/pull/31"
+      },
+      {
+        "id": "30",
+        "title": "add generating breams",
+        "url": "https://github.com/tempestai-dev/tempest/pull/30"
+      },
+      {
+        "id": "27",
+        "title": "add multialignment bar",
+        "url": "https://github.com/tempestai-dev/tempest/pull/27"
+      }
+    ]
+  },
+  {
+    "repository": {
+      "nameWithOwner": "chouhanindustries/copperhead",
+      "url": "https://github.com/chouhanindustries/copperhead"
+    },
+    "prs": [
+      {
+        "id": "130",
+        "title": "Fix/compat gemini groq docs redaction",
+        "url": "https://github.com/chouhanindustries/copperhead/pull/130"
+      },
+      {
+        "id": "123",
+        "title": "add ollama, groq, gemini and openrouter intergrations",
+        "url": "https://github.com/chouhanindustries/copperhead/pull/123"
+      },
+      {
+        "id": "96",
+        "title": "add copperhead doctor command for necessary diagnosis",
+        "url": "https://github.com/chouhanindustries/copperhead/pull/96"
+      },
+      {
+        "id": "45",
+        "title": "Add supplier BOM export (jlcpcb/digikey/mouser) via",
+        "url": "https://github.com/chouhanindustries/copperhead/pull/45"
       }
     ]
   },
@@ -59,27 +298,14 @@
     },
     "prs": [
       {
-        "id": "1",
+        "id": "1314",
         "title": "Added misère game as a slight variation of the nim",
         "url": "https://github.com/cp-algorithms/cp-algorithms/pull/1314"
       },
       {
-        "id": "2",
+        "id": "1309",
         "title": "Included Problem 1916- B Codefroces",
         "url": "https://github.com/cp-algorithms/cp-algorithms/pull/1309"
-      }
-    ]
-  },
-  {
-    "repository": {
-      "nameWithOwner": "FastCrest/reflex-vla",
-      "url": "https://github.com/FastCrest/reflex-vla"
-    },
-    "prs": [
-      {
-        "id": "1",
-        "title": "add reflex_episode_chache_bytes_total gauge + helper and EpisodeCache…",
-        "url": "https://github.com/FastCrest/reflex-vla/pull/106"
       }
     ]
   }

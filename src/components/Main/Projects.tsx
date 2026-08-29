@@ -1,0 +1,123 @@
+"use client";
+import React, { useState } from "react";
+import { useTheme } from "next-themes";
+import { CiLocationArrow1 } from "react-icons/ci";
+import { GoLinkExternal } from "react-icons/go";
+import { projects } from "@/data/data";
+import { projectSlug } from "@/components/Main/ProjectDetail";
+import Link from "next/link";
+
+const Projects = () => {
+  const { theme } = useTheme();
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  const getProjectClass = () => {
+    const baseClass =
+      "group relative p-2 md:p-3 cursor-pointer transition-all duration-300";
+
+    if (theme === "dark") {
+      return `${baseClass}  border-b border-white/10 last:border-b-0`;
+    } else {
+      return `${baseClass}  border-b border-black/10 last:border-b-0`;
+    }
+  };
+
+  const getTechClass = () => {
+    return theme === "dark" ? "text-white/60" : "text-black/60";
+  };
+
+  const getDescClass = () => {
+    return theme === "dark" ? "text-white/80" : "text-black/80";
+  };
+
+  const getArrowClass = (index: number) => {
+    const isHovered = hoveredIndex === index;
+    const baseClass = "transition-transform duration-300";
+    return `${baseClass} ${isHovered ? "translate-x-1" : ""}`;
+  };
+
+  return (
+    <section
+      id="projects"
+      className="flex flex-col items-center w-full px-2.5 pl-4 md:px-8 py-10 md:py-16"
+    >
+      <div className="w-full max-w-3xl mx-auto space-y-2 md:space-y-5 ">
+        <div className="text-center">
+          <h2 className="text-2xl md:text-3xl font-bold tracking-widest">
+            PROJECTS
+          </h2>
+        </div>
+
+        <div className="space-y-0">
+          {projects.map((project, index) => {
+            const outboundLink = project.liveLink ?? project.link;
+
+            return (
+              <div
+                key={project.name}
+                className={getProjectClass()}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                <div className="flex items-center md:justify-between">
+                  <div
+                    onClick={() => {
+                      window.location.hash = `#project-${projectSlug(project.name)}`;
+                    }}
+                    className="flex-1 group cursor-pointer"
+                  >
+                    <div className="flex items-center gap-2 md:gap-2.5 md:mb-1">
+                      <h3 className="text-base md:text-lg font-semibold tracking-wide">
+                        {project.name}
+                      </h3>
+                      <span
+                        className={`text-[9px] md:text-xs font-medium ${getTechClass()}`}
+                      >
+                        {project.tech}
+                      </span>
+                    </div>
+                    <p
+                      className={`text-xs sm:text-sm font-semibold line-clamp-2 ${getDescClass()}`}
+                    >
+                      {project.desc}
+                    </p>
+                  </div>
+                  {outboundLink && (
+                    <Link
+                      href={outboundLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Open ${project.name}`}
+                      className="ml-4"
+                    >
+                      <div className={getArrowClass(index)}>
+                        <span className="text-lg md:text-xl">
+                          <GoLinkExternal />
+                        </span>
+                      </div>
+                    </Link>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <Link
+          href="https://github.com/AniketR10"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="text-center flex items-center justify-center w-full pt-4 md:pt-8 border-t border-current">
+            <p className="text-xs md:text-sm font-bold underline [text-decoration-thickness:1px]">
+              More projects on GitHub
+            </p>
+            <CiLocationArrow1 className="inline-block ml-1 h-5 w-5" />
+          </div>
+        </Link>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

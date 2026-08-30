@@ -205,9 +205,44 @@ export const projects: Project[
 
 export const repos = [
   {
+    name: "gouroboros",
+    url: "https://github.com/blinklabs-io/gouroboros",
+    prs: [
+      {
+        title: "fix(byron): validate payloads without mutating inputs",
+        url: "https://github.com/blinklabs-io/gouroboros/pull/2111",
+      },
+    ],
+  },
+  {
+    name: "nanocoder",
+    url: "https://github.com/Nano-Collective/nanocoder",
+    prs: [
+      {
+        title: "added professional tone",
+        url: "https://github.com/Nano-Collective/nanocoder/pull/906",
+      },
+    ],
+  },
+  {
     name: "opensre",
     url: "https://github.com/Tracer-Cloud/opensre",
     prs: [
+      {
+        title:
+          "refactor(config): split config.py into llm_settings, clerk, environment",
+        url: "https://github.com/Tracer-Cloud/opensre/pull/5819",
+      },
+      {
+        title:
+          "test(session): add cross-process soak matrix for the session file lock",
+        url: "https://github.com/Tracer-Cloud/opensre/pull/5751",
+      },
+      {
+        title:
+          "ci: run tests/filestorage, tests/surfaces and tests/quality in a shard",
+        url: "https://github.com/Tracer-Cloud/opensre/pull/5662",
+      },
       {
         title:
           "refactor(notifications): register outbound adapters only from bootstrap",
@@ -394,6 +429,16 @@ export const repos = [
     name: "tempest",
     url: "https://github.com/tempestai-dev/tempest",
     prs: [
+      {
+        title:
+          "feat(chat): optional context compression via graph retrieval",
+        url: "https://github.com/tempestai-dev/tempest/pull/103",
+      },
+      {
+        title:
+          "fix(shell): detach CLI-detection probes from the controlling terminal",
+        url: "https://github.com/tempestai-dev/tempest/pull/98",
+      },
       {
         title: "add pagination and caching",
         url: "https://github.com/tempestai-dev/tempest/pull/82",

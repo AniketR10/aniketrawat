@@ -6,7 +6,7 @@ export const socials = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/aniket-rawat-2235532a4/",
+    url: "https://www.linkedin.com/in/aniketrawat00/",
     handle: "Aniket Rawat",
   },
   {

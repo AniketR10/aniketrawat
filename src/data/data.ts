@@ -7,7 +7,7 @@ export const socials = [
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/aniketrawat00/",
-    handle: "Aniket Rawat",
+    handle: "in/aniketrawat00",
   },
   {
     name: "GitHub",
@@ -16,8 +16,8 @@ export const socials = [
   },
   {
     name: "LeetCode",
-    url: "https://leetcode.com/u/aniketxd01/",
-    handle: "/u/aniketxd01",
+    url: "https://leetcode.com/u/aniketrawat00/",
+    handle: "/u/aniketrawat00",
   },
   {
     name: "Email",

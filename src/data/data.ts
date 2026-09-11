@@ -205,6 +205,36 @@ export const projects: Project[
 
 export const repos = [
   {
+    name: "inflexa",
+    url: "https://github.com/inflexa-ai/inflexa",
+    prs: [
+      {
+        title:
+          "fix(harness): refuse to leak a Postgres testcontainer when no reaper …",
+        url: "https://github.com/inflexa-ai/inflexa/pull/531",
+      },
+      {
+        title: "feat(harness): add the UniProt protein search tool",
+        url: "https://github.com/inflexa-ai/inflexa/pull/525",
+      },
+      {
+        title: "feat(harness): add the AlphaFold structure prediction tool",
+        url: "https://github.com/inflexa-ai/inflexa/pull/518",
+      },
+    ],
+  },
+  {
+    name: "OpsiMate",
+    url: "https://github.com/OpsiMate/OpsiMate",
+    prs: [
+      {
+        title:
+          "refactor(client): consolidate relative-time formatters into lib/datetime",
+        url: "https://github.com/OpsiMate/OpsiMate/pull/890",
+      },
+    ],
+  },
+  {
     name: "gouroboros",
     url: "https://github.com/blinklabs-io/gouroboros",
     prs: [
@@ -219,6 +249,16 @@ export const repos = [
     url: "https://github.com/Nano-Collective/nanocoder",
     prs: [
       {
+        title:
+          "feat(config): add `nanocoder config` to show resolved settings and th…",
+        url: "https://github.com/Nano-Collective/nanocoder/pull/1123",
+      },
+      {
+        title:
+          "add fix(lsp): resolve verification promise on early process exit to p…",
+        url: "https://github.com/Nano-Collective/nanocoder/pull/1091",
+      },
+      {
         title: "added professional tone",
         url: "https://github.com/Nano-Collective/nanocoder/pull/906",
       },
@@ -228,6 +268,16 @@ export const repos = [
     name: "opensre",
     url: "https://github.com/Tracer-Cloud/opensre",
     prs: [
+      {
+        title:
+          "fix(scheduler): parallelize delivery fan-out with per-target outcomes",
+        url: "https://github.com/Tracer-Cloud/opensre/pull/5997",
+      },
+      {
+        title:
+          "feat(slack): map read-tool output into citeable report evidence",
+        url: "https://github.com/Tracer-Cloud/opensre/pull/5887",
+      },
       {
         title:
           "refactor(config): split config.py into llm_settings, clerk, environment",
@@ -360,6 +410,18 @@ export const repos = [
     name: "screenshot-studio",
     url: "https://github.com/opennookorg/screenshot-studio",
     prs: [
+      {
+        title: "add avif conversion support",
+        url: "https://github.com/opennookorg/screenshot-studio/pull/120",
+      },
+      {
+        title: "tools bug fixes",
+        url: "https://github.com/opennookorg/screenshot-studio/pull/118",
+      },
+      {
+        title: "add five image tools",
+        url: "https://github.com/opennookorg/screenshot-studio/pull/117",
+      },
       {
         title: "add persisted state on hard reload",
         url: "https://github.com/opennookorg/screenshot-studio/pull/110",

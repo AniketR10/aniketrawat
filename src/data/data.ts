@@ -205,6 +205,26 @@ export const projects: Project[
 
 export const repos = [
   {
+    name: "kestra",
+    url: "https://github.com/kestra-io/kestra",
+    prs: [
+      {
+        title: "refactor(flows): replace explicit any with real types",
+        url: "https://github.com/kestra-io/kestra/pull/19781",
+      },
+    ],
+  },
+  {
+    name: "scalar",
+    url: "https://github.com/scalar/scalar",
+    prs: [
+      {
+        title: "feat(api-client): add generate example from schema button",
+        url: "https://github.com/scalar/scalar/pull/10072",
+      },
+    ],
+  },
+  {
     name: "inflexa",
     url: "https://github.com/inflexa-ai/inflexa",
     prs: [
@@ -235,19 +255,18 @@ export const repos = [
     ],
   },
   {
-    name: "gouroboros",
-    url: "https://github.com/blinklabs-io/gouroboros",
+    name: "nanocollective",
+    url: "https://github.com/Nano-Collective",
     prs: [
       {
-        title: "fix(byron): validate payloads without mutating inputs",
-        url: "https://github.com/blinklabs-io/gouroboros/pull/2111",
+        title: "fix: detach the training abort listener when a run ends",
+        url: "https://github.com/Nano-Collective/nanotune/pull/181",
       },
-    ],
-  },
-  {
-    name: "nanocoder",
-    url: "https://github.com/Nano-Collective/nanocoder",
-    prs: [
+      {
+        title:
+          "feat(hooks): scope a hook to the file it acted on with matchPaths",
+        url: "https://github.com/Nano-Collective/nanocoder/pull/1160",
+      },
       {
         title:
           "feat(config): add `nanocoder config` to show resolved settings and th…",
@@ -411,6 +430,10 @@ export const repos = [
     url: "https://github.com/opennookorg/screenshot-studio",
     prs: [
       {
+        title: "add image bg remover",
+        url: "https://github.com/opennookorg/screenshot-studio/pull/124",
+      },
+      {
         title: "add avif conversion support",
         url: "https://github.com/opennookorg/screenshot-studio/pull/120",
       },
@@ -491,6 +514,11 @@ export const repos = [
     name: "tempest",
     url: "https://github.com/tempestai-dev/tempest",
     prs: [
+      {
+        title:
+          "feat(agents): add MiniMax/Z.ai provider presets and Qwen Code/Droid C…",
+        url: "https://github.com/tempestai-dev/tempest/pull/113",
+      },
       {
         title:
           "feat(chat): optional context compression via graph retrieval",

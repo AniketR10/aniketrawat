@@ -38,7 +38,7 @@ const ControllerHeader = ({ activeSection }: Props) => {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/aniket-rawat-2235532a4/"
+            href="https://www.linkedin.com/in/aniketrawat00/"
             className="cursor-pointer"
           >
             <FiLinkedin

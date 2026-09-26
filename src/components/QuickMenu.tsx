@@ -2,15 +2,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { MoreVertical, Star, Sun, Moon } from "lucide-react";
 import { TbMenu3 } from "react-icons/tb";
-import { LuHeartHandshake } from "react-icons/lu";
 import { RiArticleLine } from "react-icons/ri";
 
 export default function QuickMenu({ fromSection }: { fromSection?: string }) {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -79,23 +80,15 @@ export default function QuickMenu({ fromSection }: { fromSection?: string }) {
           <span className={textClass}>Star Repo</span>
         </Link>
 
-        {/* Blogs */}
-        <Link
-          href={fromSection ? `/blogs?from=${fromSection}` : "/blogs"}
-          className={menuItemClass}
-        >
-          <RiArticleLine className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
-          <span className={textClass}>Blogs</span>
-        </Link>
-        
-        {/* Support Me */}
-        <Link
-          href={fromSection ? `/support?from=${fromSection}` : "/support"}
-          className={menuItemClass}
-        >
-          <LuHeartHandshake className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
-          <span className={textClass}>Support Me</span>
-        </Link>
+        {!pathname?.startsWith("/blogs") && (
+          <Link
+            href={fromSection ? `/blogs?from=${fromSection}` : "/blogs"}
+            className={menuItemClass}
+          >
+            <RiArticleLine className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" />
+            <span className={textClass}>Blogs</span>
+          </Link>
+        )}
 
         {/* Theme Toggle */}
         <button onClick={toggleTheme} className={menuItemClass}>

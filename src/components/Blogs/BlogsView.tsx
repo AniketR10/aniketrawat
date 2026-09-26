@@ -138,7 +138,7 @@ export default function BlogsView({ blogs: posts }: { blogs: ScrapedData[] }) {
         {/* Footer Socials */}
         <div className="flex justify-end items-center gap-3 mt-auto pt-4">
           <Link
-            href="https://www.linkedin.com/in/aniket-rawat-2235532a4/"
+            href="https://www.linkedin.com/in/aniketrawat00/"
             target="_blank"
             rel="noopener noreferrer"
             className={iconClass}
